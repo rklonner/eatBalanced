@@ -1,0 +1,49 @@
+{ "recipes": [
+	{"id": 1,
+	"name": "Low-Carb Müsli",
+	"calories": 400,
+	"category": "breakfast",
+	"ingredients": [
+		{ "name": "Chia-Samen", "unit": "g", "quantity": 15},
+		{ "name": "Sojaflocken", "unit": "g", "quantity": 10},
+		{ "name": "Nüsse", "unit": "g", "quantity": 15}
+	],
+	"preparation": "Chiasamen, Nüsse und Sojaflocken mit Wasser verrühren und über Nacht quellen lassen. Wer tiefgekühlte Himbeeren verwendet kann die Himbeeren gleich über Nacht auf den Samen auftauen lassen. In der Früh Topfen unterrühren und nach Bedarf mit Stevia süßen. Wenn das Müsli zu fest ist einfach noch Wasser unterrühren."
+	},
+	
+	{"id": 2,
+	"name": "Caprese",
+	"calories": 500,
+	"category": "lunch",
+	"ingredients": [
+		{ "name": "Mozzarella", "unit": "g", "quantity": 250},
+		{ "name": "Tomaten", "unit": "g", "quantity": 300},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 5},
+		{ "name": "Basilikum", "unit": "g", "quantity": 1},
+		{ "name": "Salz", "unit": "g", "quantity": 0},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0}
+	],
+	"preparation": "Mozzarella und Gemüse in Scheiben schneiden und schön anrichten."
+	},
+	
+	{"id": 3,
+	"name": "Tofustreifen-Salat mit Avocado",
+	"calories": 600,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Räuchertofu", "unit": "g", "quantity": 125},
+		{ "name": "Öl", "unit": "TL", "quantity": 1},
+		{ "name": "Sojasauce", "unit": "EL", "quantity": 1},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0},
+		{ "name": "Gemüse", "unit": "g", "quantity": 250},
+		{ "name": "Olivenöl", "unit": "EL", "quantity": 1},
+		{ "name": "Essig", "unit": "EL", "quantity": 2},
+		{ "name": "Senf", "unit": "TL", "quantity": 1},
+		{ "name": "Avocado", "unit": "g", "quantity": 150},
+		{ "name": "Salz", "unit": "g", "quantity": 0},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0}
+	],
+	"preparation": "Tofustreifen trocken tupfen, in Öl anbraten, mit Sojasauce würzen. Salat mit Dressing aus Essig, Öl und Senf marinieren. Tofustreifen und Avocadostücke am Salat anrichten."
+	}
+  ]
+}

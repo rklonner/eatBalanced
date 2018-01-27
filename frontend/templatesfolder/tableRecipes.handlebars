@@ -1,0 +1,16 @@
+  <table class="table">
+    <thead>
+      <th scope="col">Name</th>
+      <th scope="col">Kategorie Name</th>
+      <th scope="col">Kalorien</th>
+    </thead>
+    <tbody>
+      {{#recipes}}
+        <tr scope="row">
+          <td>{{name}}</td>
+          <td>{{category}} {{lastName}}</td>
+          <td>{{calories}}</td>
+        </tr>
+      {{/recipes}}
+    </tbody>
+  </table>
