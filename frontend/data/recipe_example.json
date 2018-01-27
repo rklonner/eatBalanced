@@ -1,0 +1,19 @@
+	{"id": 3,
+	"name": "Tofustreifen-Salat mit Avocado",
+	"calories": 600,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Räuchertofu", "unit": "g", "quantity": 125},
+		{ "name": "Öl", "unit": "TL", "quantity": 1},
+		{ "name": "Sojasauce", "unit": "EL", "quantity": 1},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0},
+		{ "name": "Gemüse", "unit": "g", "quantity": 250},
+		{ "name": "Olivenöl", "unit": "EL", "quantity": 1},
+		{ "name": "Essig", "unit": "EL", "quantity": 2},
+		{ "name": "Senf", "unit": "TL", "quantity": 1},
+		{ "name": "Avocado", "unit": "g", "quantity": 150},
+		{ "name": "Salz", "unit": "g", "quantity": 0},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0}
+	],
+	"preparation": "Tofustreifen trocken tupfen, in Öl anbraten, mit Sojasauce würzen. Salat mit Dressing aus Essig, Öl und Senf marinieren. Tofustreifen und Avocadostücke am Salat anrichten."
+	}

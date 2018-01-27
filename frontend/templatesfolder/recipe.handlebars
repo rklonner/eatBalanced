@@ -1,16 +1,17 @@
-  <table class="table">
-    <thead>
-      <th scope="col">Name</th>
-      <th scope="col">Kategorie Name</th>
-      <th scope="col">Kalorien</th>
-    </thead>
-    <tbody>
-      {{#recipes}}
-        <tr scope="row">
-          <td>{{name}}</td>
-          <td>{{category}} {{lastName}}</td>
-          <td>{{calories}}</td>
-        </tr>
-      {{/recipes}}
-    </tbody>
-  </table>
+<div class="recipe">
+<h1>{{name}}</h1>
+<br>
+<h3>Zutaten:</h3>
+<table class="table">
+<tr>
+{{#ingredients}}
+  <td>{{quantity}}</td>
+  <td>{{unit}}</td>
+  <td>{{name}}</td>
+</tr>
+{{/ingredients}}
+</table>
+
+<h3>Zubereitung:</h3>
+<p>{{preparation}}</p>
+</div>

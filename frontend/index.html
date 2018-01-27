@@ -19,17 +19,16 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active"><a class="nav-link" href="">Home<span class="sr-only">(current)</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/recipes.html">Rezepte</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/shopping.html">Einkaufen</a></li>
+            <li class="nav-item active"><a id="mainHome" class="nav-link" href=#>Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a id="mainRecipes" class="nav-link" href=#>Rezepte</a></li>
+            <li class="nav-item"><a id="mainShopping" class="nav-link" href=#>Einkaufen</a></li>
           </ul>
         </div>
       </div>
     </nav>
 	
-	<button id="getRecipes">Rezepte laden</button>
-	
-	<div id="recipesBox"></div>
+	<div id="content"></div>
+
    
     <!-- Bootstrap core JavaScript -->
     <script src="static/jquery/jquery.min.js"></script>
@@ -37,7 +36,9 @@
 	<script src="static/handlebars/handlebars.min-latest.js"></script>
 	<script src="templatesfolder/handlebarsGetTemplate.js"></script>
 	<script src="templatesfolder/templates.js"></script>
+	<script src="handlerMenue.js"></script>
 	<script src="loadRecipes.js"></script>
+	<script src="showRecipe.js"></script>
       
   </body>
 
