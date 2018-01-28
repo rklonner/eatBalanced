@@ -1,8 +1,10 @@
 $('#mainHome').on('click', function() {
+  $('.navbar-collapse').collapse('hide');  // close navbar after click
   $('#content').empty();
 });
 
 $('#mainRecipes').on('click', function() {
+  $('.navbar-collapse').collapse('hide');  // close navbar after click
   var compiledTemplate = Handlebars.getTemplate('mainRecipes');
   var html = compiledTemplate({});
   $('#content').empty();
@@ -31,6 +33,7 @@ $('#mainRecipes').on('click', function() {
 });
   
 $('#mainShopping').on('click', function() {
+  $('.navbar-collapse').collapse('hide');  // close navbar after click
   var compiledTemplate = Handlebars.getTemplate('mainShopping');
   var html = compiledTemplate({});
   $('#content').empty();
