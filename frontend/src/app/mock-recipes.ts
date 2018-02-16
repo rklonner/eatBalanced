@@ -8,7 +8,7 @@ import { Recipe } from './recipe';
 	{id: 5, name: "Süßkartoffel-Linsen-Eintopf"}
 ];*/
 
-export const RECIPES = [
+export const RECIPES: Recipe[] = [
 {"id": 1,
 	"name": "Low-Carb Müsli",
 	"calories": 400,
@@ -23,7 +23,7 @@ export const RECIPES = [
 	    "Chiasamen, Nüsse und Sojaflocken mit Wasser verrühren und über Nacht quellen lassen.",
 	    "In der Früh Topfen unterrühren und mit geschnittenem Obst anrichten"
 		],
-    "image_filename": "1.png"
+    "image_filename": "1.jpg"
 	},	
 	{"id": 2,
 	"name": "Caprese",
@@ -41,7 +41,7 @@ export const RECIPES = [
 	"preparation": [
 	    "Mozzarella und Gemüse in Scheiben schneiden und schön anrichten."
 		],
-	"image_filename": "2.png"
+	"image_filename": "2.jpg"
 	},	
 	{"id": 3,
 	"name": "Tofustreifen-Salat mit Avocado",

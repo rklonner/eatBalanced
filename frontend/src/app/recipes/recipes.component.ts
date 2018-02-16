@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Recipe } from '../recipe';
 import { RecipeService } from '../recipe.service';
-
+import { DomSanitizer  } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-recipes',
@@ -23,7 +23,16 @@ export class RecipesComponent implements OnInit {
         .subscribe(recipes => this.recipes = recipes);
   }
   
-  constructor(private recipeService: RecipeService) { }
+  // use DomSanitizer to secure background-image url
+  getBackgroundImage(recipe: Recipe) {
+	//TODO: get baseurl from somewhere else
+	const recipeImageUrl = "http://localhost:8000/" + recipe.image_filename;
+    const style = `background-image: url(${recipeImageUrl})`;
+	return this.sanitizer.bypassSecurityTrustStyle(style);
+  }
+  
+  constructor(private recipeService: RecipeService, private sanitizer: DomSanitizer) {
+  }
 
   ngOnInit() {
 	this.getRecipes();

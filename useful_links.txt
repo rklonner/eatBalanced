@@ -12,5 +12,5 @@ https://auth0.com/blog/angular-2-authentication/
 # angular todo append
 https://www.sitepoint.com/angular-2-tutorial/
 
-#backgroundimage
+# set dynmic backgroundimage with anitizer.bypassSecurity
 https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/
