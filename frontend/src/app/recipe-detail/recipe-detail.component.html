@@ -1,20 +1,19 @@
 <div *ngIf="recipe">
-
-  <h2>{{ recipe.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{recipe.id}}</div>
+  <h4>{{ recipe.name }}</h4>
+  <!--<div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>-->
   <div>
-    <label>name:
-      <input [(ngModel)]="recipe.name" placeholder="name"/>
-    </label>
+    <u>Zutaten:</u>
+    <ul class="recipes">
+      <li *ngFor="let ingredient of recipe['ingredients']">
+        <span class="badge">{{ ingredient.quantity }} {{ ingredient.unit }} {{ ingredient.name }}</span> 
+      </li>
+    </ul>
+	<u>Zubereitung:</u>
+	<ol class="recipes">
+      <li *ngFor="let step of recipe['preparation']">
+        <span class="badge">{{ step }}</span> 
+      </li>
+    </ol>
   </div>
-  
-  <!--
-  <div>
-  <ul class="recipes">
-    <li *ngFor="let recipe of recipes">
-      <span class="badge">{{recipe.id}}</span> {{recipe.name}}
-    </li>
-</ul>
-  </div>-->
-
+  <button type="button" class="btn btn-primary">+Menüplan</button>
 </div>

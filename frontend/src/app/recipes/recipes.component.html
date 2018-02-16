@@ -15,10 +15,11 @@
 <div class="recipes">
   <div *ngFor="let recipe of recipes" (click)="onSelect(recipe)">
     <h4>{{recipe.name}}</h4>
-	<div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
+	<a routerLink="/detail/{{recipe.id}}">
+	  <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
+	</a>
+	<br>
 	<button type="button" class="btn btn-primary">+Menüplan</button>
 	<br><br>
   </div>
 </div>
-
-<app-recipe-detail [recipe]="selectedRecipe"></app-recipe-detail>

@@ -6,3 +6,8 @@
 	background-size: cover;
 	background-position: center center;
 }
+
+/* otherwise anchor is valid on full width an not only the image */
+a{
+    display:inline-block;
+}

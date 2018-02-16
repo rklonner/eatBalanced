@@ -12,10 +12,10 @@ export class RecipesComponent implements OnInit {
   
   recipes: Recipe[];
   
-  selectedRecipe: Recipe;
-
-  onSelect(recipe: Recipe): void {
-    this.selectedRecipe = recipe;
+  constructor(private recipeService: RecipeService, private sanitizer: DomSanitizer) { }
+  
+  ngOnInit() {
+	this.getRecipes();
   }
   
   getRecipes(): void {
@@ -30,12 +30,4 @@ export class RecipesComponent implements OnInit {
     const style = `background-image: url(${recipeImageUrl})`;
 	return this.sanitizer.bypassSecurityTrustStyle(style);
   }
-  
-  constructor(private recipeService: RecipeService, private sanitizer: DomSanitizer) {
-  }
-
-  ngOnInit() {
-	this.getRecipes();
-  }
-
 }
