@@ -35,15 +35,17 @@ var getData = function( dataname, callback ) {
 app.get( '/api/recipes', function( request, response ) {
   console.log( 'GET all recipes' );
     getData( 'recipes', function( allRecipes ) {
-      response.send( {recipes: allRecipes } );
+      response.send( allRecipes );
     });
 });
 
 app.get( '/api/recipes/:id', function( request, response ) {
     var id = request.params.id;
     console.log( 'GET recipe id', id  );
+	// todo, use id as key in recipe.json, not array-index
+	id = id - 1;
     getData( 'recipes', function( allRecipes ) {
-      response.send( {recipes:[ allRecipes[id] ] } );
+      response.send( allRecipes[id] );
     });
 });
 
