@@ -1,6 +1,6 @@
 <div *ngIf="recipe">
   <h4>{{ recipe.name }}</h4>
-  <!--<div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>-->
+  <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
   <div>
     <u>Zutaten:</u>
     <ul class="recipes">
@@ -15,5 +15,5 @@
       </li>
     </ol>
   </div>
-  <button type="button" class="btn btn-primary">+Menüplan</button>
+  <button type="button" class="btn btn-primary" (click)="onClickAddToMenuplan(recipe)">+Menüplan</button>
 </div>

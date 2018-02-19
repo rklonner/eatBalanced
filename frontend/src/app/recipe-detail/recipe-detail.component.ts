@@ -1,9 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
+import { DomSanitizer  } from '@angular/platform-browser';
 
 import { RecipeService }  from '../recipe.service';
 import { Recipe } from '../recipe';
+import { MenuplanService } from '../menuplan.service';
 
 
 @Component({
@@ -17,7 +19,9 @@ export class RecipeDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private recipeService: RecipeService,
-    private location: Location
+	private menuplanService: MenuplanService,
+    private location: Location,
+	private sanitizer: DomSanitizer
   ) {}
 
   ngOnInit(): void {
@@ -28,5 +32,17 @@ export class RecipeDetailComponent implements OnInit {
     const id = +this.route.snapshot.paramMap.get('id');  //+ converts string to number
     this.recipeService.getRecipe(id)
       .subscribe(recipe => this.recipe = recipe);
+  }
+  
+  onClickAddToMenuplan(recipe: Recipe): void {
+	this.menuplanService.add(recipe);
+  }
+  
+  // use DomSanitizer to secure background-image url
+  getBackgroundImage(recipe: Recipe) {
+	//TODO: get baseurl from somewhere else
+	const recipeImageUrl = "http://localhost:8000/" + recipe.image_filename;
+    const style = `background-image: url(${recipeImageUrl})`;
+	return this.sanitizer.bypassSecurityTrustStyle(style);
   }
 }

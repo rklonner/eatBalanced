@@ -9,8 +9,8 @@
 	    <!-- angular: use combination of routerLink="/recipes" (click)="isNavbarCollapsed = !isNavbarCollapsed" so that
 		     navbar will collapse after click on link-->
         <li class="nav-item active"><a id="mainRecipes" class="nav-link" routerLink="/recipes" (click)="isNavbarCollapsed = !isNavbarCollapsed" href=#>Rezepte<span class="sr-only">(current)</span></a></li>
-        <li class="nav-item"><a id="mainMenu" class="nav-link" href=#>Menüplan</a></li>
-		<li class="nav-item"><a id="mainMenu" class="nav-link" href=#>Einkaufsliste</a></li>
+        <li class="nav-item"><a id="mainMenu" class="nav-link" routerLink="/menuplan" (click)="isNavbarCollapsed = !isNavbarCollapsed" href=#>Menüplan</a></li>
+		<li class="nav-item"><a id="mainShoppingList" class="nav-link" href=#>Einkaufsliste</a></li>
       </ul>
     </div>
   </div>

@@ -13,13 +13,13 @@
 <br>
 <br>
 <div class="recipes">
-  <div *ngFor="let recipe of recipes" (click)="onSelect(recipe)">
+  <div *ngFor="let recipe of recipes">
     <h4>{{recipe.name}}</h4>
 	<a routerLink="/detail/{{recipe.id}}">
 	  <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
 	</a>
 	<br>
-	<button type="button" class="btn btn-primary">+Menüplan</button>
+	<button type="button" class="btn btn-primary" (click)="onClickAddToMenuplan(recipe)">+Menüplan</button>
 	<br><br>
   </div>
 </div>

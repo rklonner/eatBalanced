@@ -1,0 +1,7 @@
+@import '../recipes/recipes.component.css';
+
+/* overwrite imported css */
+.recipeListImageContainer {
+	width:  75px;
+	height: 50px;
+}

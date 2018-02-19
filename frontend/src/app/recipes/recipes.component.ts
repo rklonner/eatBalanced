@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer  } from '@angular/platform-browser';
+
 import { Recipe } from '../recipe';
 import { RecipeService } from '../recipe.service';
-import { DomSanitizer  } from '@angular/platform-browser';
+import { MenuplanService } from '../menuplan.service';
+
 
 @Component({
   selector: 'app-recipes',
@@ -12,7 +15,9 @@ export class RecipesComponent implements OnInit {
   
   recipes: Recipe[];
   
-  constructor(private recipeService: RecipeService, private sanitizer: DomSanitizer) { }
+  constructor(private recipeService: RecipeService,
+              private menuplanService: MenuplanService,
+              private sanitizer: DomSanitizer) { }
   
   ngOnInit() {
 	this.getRecipes();
@@ -29,5 +34,9 @@ export class RecipesComponent implements OnInit {
 	const recipeImageUrl = "http://localhost:8000/" + recipe.image_filename;
     const style = `background-image: url(${recipeImageUrl})`;
 	return this.sanitizer.bypassSecurityTrustStyle(style);
+  }
+  
+  onClickAddToMenuplan(recipe: Recipe): void {
+	this.menuplanService.add(recipe);
   }
 }

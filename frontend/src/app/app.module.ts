@@ -11,7 +11,9 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { RecipeService } from './recipe.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
-import { AppRoutingModule } from './/app-routing.module'
+import { AppRoutingModule } from './/app-routing.module';
+import { MenuplanComponent } from './menuplan/menuplan.component';
+import { MenuplanService } from './menuplan.service'
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { AppRoutingModule } from './/app-routing.module'
     AppNavbarComponent,
     RecipesComponent,
     RecipeDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    MenuplanComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,7 @@ import { AppRoutingModule } from './/app-routing.module'
 	AppRoutingModule,
 	HttpClientModule
   ],
-  providers: [RecipeService, MessageService],
+  providers: [RecipeService, MessageService, MenuplanService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

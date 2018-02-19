@@ -1,0 +1,16 @@
+<h2>Menüplan</h2>
+
+<div *ngIf="menuplanService.selectedRecipes.length">
+  <div>
+    <div *ngFor='let recipe of menuplanService.selectedRecipes; let i = index'>
+	  <h6>{{recipe.name}}</h6>
+	  <a routerLink="/detail/{{recipe.id}}">
+	    <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
+	  </a>
+	  <button type="button" class="btn btn-danger" (click)="menuplanService.delete(i)">-</button>
+	  <br>
+	  </div>
+    
+  </div>
+  <button type="button" class="btn btn-danger" (click)="menuplanService.clear()">Menüplan löschen</button>
+</div>
