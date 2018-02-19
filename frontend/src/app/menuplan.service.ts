@@ -1,14 +1,24 @@
 import { Injectable } from '@angular/core';
-import { Recipe } from './recipe';
+import { Recipe, RecipeMenuplan } from './recipe';
+import { User, UserMenuplan } from './user';
+import { USER, HOUSEHOLD } from './mock-user';
 
 @Injectable()
 export class MenuplanService {
 
-  selectedRecipes: Recipe[] = [];
+  currentUser: User = USER;
+  currentHousehold: User[] = HOUSEHOLD;
+  //selectedRecipes: Recipe[] = [];
+  selectedRecipes: RecipeMenuplan[] = [];
   
   add(recipe: Recipe) {
-	this.selectedRecipes.push(recipe);
+	let recipeMenuplan = new RecipeMenuplan(recipe, this.currentHousehold)
+	this.selectedRecipes.push(recipeMenuplan);
 	console.log("added new recipe to menuplan: #", this.selectedRecipes.length);
+	
+	//let recipeMenuplan = new RecipeMenuplan(recipe, this.currentHousehold);
+	//console.log(recipeMenuplan);
+
   }
   
   delete(index: number) {

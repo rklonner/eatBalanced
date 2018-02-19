@@ -13,7 +13,8 @@ import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { MenuplanComponent } from './menuplan/menuplan.component';
-import { MenuplanService } from './menuplan.service'
+import { MenuplanService } from './menuplan.service';
+import { UserService } from './user.service'
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { MenuplanService } from './menuplan.service'
 	AppRoutingModule,
 	HttpClientModule
   ],
-  providers: [RecipeService, MessageService, MenuplanService],
+  providers: [RecipeService, MessageService, MenuplanService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

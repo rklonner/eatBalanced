@@ -14,3 +14,6 @@ https://www.sitepoint.com/angular-2-tutorial/
 
 # set dynmic backgroundimage with anitizer.bypassSecurity
 https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/
+
+# instanciate class with http.get() response 
+https://stackoverflow.com/questions/44007094/typescript-angular-2-parse-json-to-object-in-http

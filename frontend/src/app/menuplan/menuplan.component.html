@@ -6,8 +6,13 @@
 	  <h6>{{recipe.name}}</h6>
 	  <a routerLink="/detail/{{recipe.id}}">
 	    <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
-	  </a>
+	  </a><!---->
+	  <button *ngFor='let user of recipe.userMenuplan' 
+	    type="button"
+		[ngClass]="user.isEatingMeal ? 'btn btn-info' : 'btn btn-warning'"
+		(click)="user.switchEatMeal()">{{ user.name }}</button>
 	  <button type="button" class="btn btn-danger" (click)="menuplanService.delete(i)">-</button>
+	  <br>
 	  <br>
 	  </div>
     

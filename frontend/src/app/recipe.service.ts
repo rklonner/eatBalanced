@@ -36,7 +36,7 @@ export class RecipeService {
   getRecipes (): Observable<Recipe[]> {
     return this.http.get<Recipe[]>(this.recipesUrl)
       .pipe(
-	    tap(heroes => this.log(`fetched heroes`)),
+	    tap(recipes => this.log(`fetched recipes`)),
         catchError(this.handleError('getRecipes', []))
       );
   }
