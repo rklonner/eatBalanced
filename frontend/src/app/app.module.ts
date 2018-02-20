@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
@@ -31,7 +32,8 @@ import { UserService } from './user.service'
 	NgbModule.forRoot(),
 	FormsModule,
 	AppRoutingModule,
-	HttpClientModule
+	HttpClientModule,
+	AngularFontAwesomeModule
   ],
   providers: [RecipeService, MessageService, MenuplanService, UserService],
   bootstrap: [AppComponent]

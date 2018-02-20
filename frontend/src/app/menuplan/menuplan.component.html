@@ -1,4 +1,5 @@
 <h2>Menüplan</h2>
+<fa name="trash-alt" size="3x" style="color: black">
 
 <div *ngIf="menuplanService.selectedRecipes.length">
   <div>
@@ -7,11 +8,11 @@
 	  <a routerLink="/detail/{{recipe.id}}">
 	    <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
 	  </a><!---->
-	  <button *ngFor='let user of recipe.userMenuplan' 
-	    type="button"
-		[ngClass]="user.isEatingMeal ? 'btn btn-info' : 'btn btn-warning'"
-		(click)="user.switchEatMeal()">{{ user.name }}</button>
-	  <button type="button" class="btn btn-danger" (click)="menuplanService.delete(i)">-</button>
+	  <fa *ngFor='let user of recipe.userMenuplan'
+	    name="user-circle" size="3x"
+		[ngStyle]="{'color': user.isEatingMeal ? 'blue' : 'grey'}"
+		(click)="user.switchEatMeal()"></fa>
+	  <button type="button" class="btn btn-danger" (click)="menuplanService.delete(i)"><fa name="minus" style="color: white"></fa></button>
 	  <br>
 	  <br>
 	  </div>

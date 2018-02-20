@@ -1,4 +1,12 @@
 <h2>Rezepte</h2>
+<fa name="home" style="color: black"></fa>
+<fa name="refresh" style="color: black"></fa>
+<fa name="minus" style="color: black"></fa>
+<fa name="arrow-circle-o-down" style="color: black"></fa>
+
+<!--<fa name="trash-o" size="3x" style="color: black">-->
+
+
 
 <div class="row">
   <div class="col-lg-4">
@@ -19,7 +27,7 @@
 	  <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
 	</a>
 	<br>
-	<button type="button" class="btn btn-primary" (click)="onClickAddToMenuplan(recipe)">+Menüplan</button>
+	<button type="button" class="btn btn-primary" (click)="onClickAddToMenuplan(recipe)"><fa name="plus" style="color: white"></fa> Menüplan</button>
 	<br><br>
   </div>
 </div>

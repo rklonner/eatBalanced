@@ -1,4 +1,4 @@
-import { UserMenuplan } from './user';
+import { User, UserMenuplan } from './user';
 
 export class Ingredient {
   name: string;
@@ -33,7 +33,7 @@ export class Recipe {
 	
 	this.ingredients = [];
 	for (let i of recipe.ingredients) {
-	  this.ingredients.push(new Ingredient(i.name, i.unit, i.quantity, i.category));
+	  this.ingredients.push(new Ingredient(i));
 	}
 	
 	this.preparation = recipe.preparation;
