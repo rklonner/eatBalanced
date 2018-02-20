@@ -19,4 +19,10 @@ https://juristr.com/blog/2016/01/learning-ng2-dynamic-styles/
 https://stackoverflow.com/questions/44007094/typescript-angular-2-parse-json-to-object-in-http
 
 # angular 5 include font awesome
-https://www.google.at/search?client=firefox-b-ab&dcr=0&ei=al6LWrOcLMPLwAKywImgCg&q=angular+add+icons+favicon&oq=angular+adding+icons+favi&gs_l=psy-ab.3.0.33i22i29i30k1.1977.3463.0.4905.5.5.0.0.0.0.157.525.3j2.5.0....0...1c..64.psy-ab..0.3.257...33i160k1.0.lQHsrOA22qk
+https://www.npmjs.com/package/angular-font-awesome
+
+# angular using one main configuration file app.constants.ts
+https://offering.solutions/blog/articles/2016/02/01/consuming-a-rest-api-with-angular-http-service-in-typescript/
+
+# angular domain models or how to separate buisness logic from components
+https://auth0.com/blog/angular-2-series-part-2-domain-models-and-dependency-injection/
