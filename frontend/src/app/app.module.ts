@@ -15,7 +15,8 @@ import { MessageService } from './message.service';
 import { AppRoutingModule } from './/app-routing.module';
 import { MenuplanComponent } from './menuplan/menuplan.component';
 import { MenuplanService } from './menuplan.service';
-import { UserService } from './user.service'
+import { UserService } from './user.service';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component'
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { UserService } from './user.service'
     RecipesComponent,
     RecipeDetailComponent,
     MessagesComponent,
-    MenuplanComponent
+    MenuplanComponent,
+    ShoppingListComponent
   ],
   imports: [
     BrowserModule,

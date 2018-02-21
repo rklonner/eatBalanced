@@ -8,7 +8,6 @@ export class MenuplanService {
 
   currentUser: User = USER;
   currentHousehold: User[] = HOUSEHOLD;
-  //selectedRecipes: Recipe[] = [];
   selectedRecipes: RecipeMenuplan[] = [];
   
   add(recipe: Recipe) {

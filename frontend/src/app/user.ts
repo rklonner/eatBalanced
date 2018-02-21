@@ -17,18 +17,20 @@ export class User {
 }
 
 export class UserMenuplan extends User {
-	
-  constructor(user: User) {
-	  super(user);
-  }
-  
+
   isEatingMeal: boolean = true;
+  ingredientFactor: number;
   
-  getCalorieFactor(calories_diet_plan: number): number {
-	return this.calorie_requirement_diet / calories_diet_plan;
+  constructor(user: User, calories_diet_plan: number) {
+	super(user);
+	this.ingredientFactor = this.calcCalorieFactor(calories_diet_plan);
   }
   
   switchEatMeal() {
 	this.isEatingMeal = !this.isEatingMeal;
+  }
+  
+  private calcCalorieFactor(calories_diet_plan: number): number {
+	return this.calorie_requirement_diet / calories_diet_plan;
   }
 }

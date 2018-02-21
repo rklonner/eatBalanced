@@ -50,7 +50,7 @@ export class RecipeMenuplan extends Recipe {
 	
 	this.userMenuplan = []
 	for (let u of users) {
-	  this.userMenuplan.push(new UserMenuplan(u));
+	  this.userMenuplan.push(new UserMenuplan(u, recipe.calories_diet_plan));
 	}
   }
 }

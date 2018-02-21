@@ -1,0 +1,18 @@
+<h3>Einkaufsliste</h3>
+
+<table *ngIf="shoppingList.items.length">
+  <!--class="table table-sm">-->
+  <thead>
+    <tr>
+      <th>Menge</th>
+      <th>Zutat</th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let ingredient of shoppingList.items; let i = index">
+      <td>{{ ingredient.quantity }} {{ ingredient.unit }}</td>
+      <td>{{ ingredient.name }}</td>
+	  <td><button type="button" class="btn btn-danger" (click)="shoppingList.deleteItem(i)"><fa name="minus" style="color: white"></fa></button></td>
+    </tr>
+  </tbody>
+</table>
