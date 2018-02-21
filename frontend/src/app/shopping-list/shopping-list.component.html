@@ -5,13 +5,17 @@
   <thead>
     <tr>
       <th>Menge</th>
+	  <th>Einheit</th>
       <th>Zutat</th>
+	  <th>Kategorie</th>
 	</tr>
   </thead>
   <tbody>
     <tr *ngFor="let ingredient of shoppingList.items; let i = index">
-      <td>{{ ingredient.quantity }} {{ ingredient.unit }}</td>
+      <td align="right">{{ ingredient.quantity | round }}</td>
+	  <td>{{ ingredient.unit }}</td>
       <td>{{ ingredient.name }}</td>
+	  <td align="center">{{ ingredient.category }}</td>
 	  <td><button type="button" class="btn btn-danger" (click)="shoppingList.deleteItem(i)"><fa name="minus" style="color: white"></fa></button></td>
     </tr>
   </tbody>

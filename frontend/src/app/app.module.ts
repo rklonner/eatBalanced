@@ -16,7 +16,9 @@ import { AppRoutingModule } from './/app-routing.module';
 import { MenuplanComponent } from './menuplan/menuplan.component';
 import { MenuplanService } from './menuplan.service';
 import { UserService } from './user.service';
-import { ShoppingListComponent } from './shopping-list/shopping-list.component'
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+
+import { RoundPipe } from './round.pipe';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component'
     RecipeDetailComponent,
     MessagesComponent,
     MenuplanComponent,
-    ShoppingListComponent
+    ShoppingListComponent,
+	RoundPipe
   ],
   imports: [
     BrowserModule,
