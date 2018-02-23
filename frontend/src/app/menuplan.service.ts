@@ -20,6 +20,10 @@ export class MenuplanService {
 
   }
   
+  getRecipeMenuplan(index: number): RecipeMenuplan {
+	return this.selectedRecipes[index];
+  }
+  
   delete(index: number) {
 	this.selectedRecipes.splice(index,1);
   }

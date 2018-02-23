@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer  } from '@angular/platform-browser';
-import { Recipe } from '../recipe';
 
+import { Recipe } from '../recipe';
 import { MenuplanService } from '../menuplan.service';
+
 
 @Component({
   selector: 'app-menuplan',

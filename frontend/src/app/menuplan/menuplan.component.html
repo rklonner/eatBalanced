@@ -2,9 +2,11 @@
 
 <div *ngIf="menuplanService.selectedRecipes.length">
   <div>
+    
     <div *ngFor='let recipe of menuplanService.selectedRecipes; let i = index'>
 	  <h6>{{recipe.name}}</h6>
-	  <a routerLink="/detail/{{recipe.id}}">
+	  <!-- use + 1 to have nice id urls, gets substracted in .ts method -->
+	  <a routerLink="/menuplan-detail/{{i + 1}}">
 	    <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
 	  </a><!---->
 	  <!--<fa *ngFor='let user of recipe.userMenuplan'

@@ -4,9 +4,7 @@ export class ShoppingList {
   
   // container for accumulating ingredients
   // Object keys = Ingredient.name
-  itemsContainer: {
-	[string]: Ingredient
-  };
+  itemsContainer: {};
   // array of accumulated ingredients
   items: Ingredient[];
   
@@ -19,7 +17,7 @@ export class ShoppingList {
     }
   }
   
-  addItem(ingredient: Ingredient[]) {
+  addItem(ingredient: Ingredient) {
   	if (this.itemsContainer.hasOwnProperty(ingredient.name)) {
   	  console.log('has property')
   	  this.itemsContainer[ingredient.name].quantity += ingredient.quantity;
@@ -70,14 +68,14 @@ export class ShoppingList {
   multisort(arr, columns, order_by) {
         if(typeof columns == 'undefined') {
             columns = []
-            for(x=0;x<arr[0].length;x++) {
+            for(let x=0;x<arr[0].length;x++) {
                 columns.push(x);
             }
         }
 
         if(typeof order_by == 'undefined') {
             order_by = []
-            for(x=0;x<arr[0].length;x++) {
+            for(let x=0;x<arr[0].length;x++) {
                 order_by.push('ASC');
             }
         }
@@ -108,5 +106,4 @@ export class ShoppingList {
             return multisort_recursive(a,b,columns,order_by,0);
         });
     }
-};
 }

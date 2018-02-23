@@ -17,8 +17,11 @@ import { MenuplanComponent } from './menuplan/menuplan.component';
 import { MenuplanService } from './menuplan.service';
 import { UserService } from './user.service';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { MenuplanDetailComponent } from './menuplan-detail/menuplan-detail.component';
 
-import { RoundPipe } from './round.pipe';
+import { RoundPipe } from './pipes/round.pipe';
+import { MultiplyPipe } from './pipes/multiply.pipe';
+
 
 
 @NgModule({
@@ -30,7 +33,9 @@ import { RoundPipe } from './round.pipe';
     MessagesComponent,
     MenuplanComponent,
     ShoppingListComponent,
-	RoundPipe
+	MenuplanDetailComponent,
+	RoundPipe,
+	MultiplyPipe
   ],
   imports: [
     BrowserModule,

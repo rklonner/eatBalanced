@@ -1,0 +1,43 @@
+<div *ngIf="recipeMenuplan">
+  <h4>{{ recipeMenuplan.name }}</h4>
+  <div class="recipeListImageContainer" [style]="getBackgroundImage(recipeMenuplan)"></div>
+  
+  <table>
+    <thead>
+	  <tr>
+	    <th>Zutaten</th>
+	    <th>Gesamt</th>
+		<!-- ng-container: In the DOM, its content is rendered as usual, but the tag itself is rendered as an HTML comment-->
+	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
+	      <th>{{ userMenuplan.name }}</th>
+	    </ng-container>
+	  </tr>
+	</thead>
+    <tbody>
+	  <tr *ngFor="let ingredient of recipeMenuplan['ingredients']">
+	    <td>{{ ingredient.name }}</td>
+	    <td>{{ ingredient.quantity | round }} {{ ingredient.unit }}</td>
+	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
+	      <td>{{ ingredient.quantity | multiply:userMenuplan.ingredientFactor | round }} {{ ingredient.unit }}</td>
+	    </ng-container>
+	  </tr>
+	  <tr>
+	    <td>Kalorien</td>
+	    <td>{{ recipeMenuplan.calories }} </td>
+	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
+	      <td>{{ recipeMenuplan.calories | multiply:userMenuplan.ingredientFactor | round }}</td>
+	    </ng-container>
+	  </tr>
+	</tbody>
+  </table>
+  <br>
+  <div>
+	<u>Zubereitung:</u>
+	<ol>
+      <li *ngFor="let step of recipeMenuplan['preparation']">
+        <span>{{ step }}</span> 
+      </li>
+    </ol>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="goBack()">Zurück</button>
+</div>

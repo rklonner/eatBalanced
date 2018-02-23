@@ -38,6 +38,10 @@ export class RecipeDetailComponent implements OnInit {
 	this.menuplanService.add(recipe);
   }
   
+  goBack(): void {
+    this.location.back();
+  }
+  
   // use DomSanitizer to secure background-image url
   getBackgroundImage(recipe: Recipe) {
 	//TODO: get baseurl from somewhere else
