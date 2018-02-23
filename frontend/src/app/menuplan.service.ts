@@ -24,6 +24,13 @@ export class MenuplanService {
 	return this.selectedRecipes[index];
   }
   
+  moveUp(index: number) {
+	//this.selectedRecipes.splice(index+
+  }
+  
+  moveDown(index: number) {
+  }
+  
   delete(index: number) {
 	this.selectedRecipes.splice(index,1);
   }

@@ -18,11 +18,12 @@ export class User {
 
 export class UserMenuplan extends User {
 
-  isEatingMeal: boolean = true;
+  isEatingMeal: boolean;
   ingredientFactor: number;
   
   constructor(user: User, calories_diet_plan: number) {
 	super(user);
+	this.isEatingMeal = true;
 	this.ingredientFactor = this.calcCalorieFactor(calories_diet_plan);
   }
   

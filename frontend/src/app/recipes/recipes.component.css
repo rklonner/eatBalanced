@@ -1,6 +1,6 @@
 .recipeListImageContainer {
-	width:  300px;
-	height: 200px;
+	width:  260px;
+	height: 174px;
 	
 	/*background-image is set by recipesComponent */
 	background-size: cover;
@@ -10,4 +10,5 @@
 /* otherwise anchor is valid on full width an not only the image */
 a{
     display:inline-block;
+	vertical-align:middle;
 }

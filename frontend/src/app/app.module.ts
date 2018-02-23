@@ -21,6 +21,7 @@ import { MenuplanDetailComponent } from './menuplan-detail/menuplan-detail.compo
 
 import { RoundPipe } from './pipes/round.pipe';
 import { MultiplyPipe } from './pipes/multiply.pipe';
+import { MenuplanUsersSelectComponent } from './menuplan-users-select/menuplan-users-select.component';
 
 
 
@@ -35,7 +36,8 @@ import { MultiplyPipe } from './pipes/multiply.pipe';
     ShoppingListComponent,
 	MenuplanDetailComponent,
 	RoundPipe,
-	MultiplyPipe
+	MultiplyPipe,
+	MenuplanUsersSelectComponent
   ],
   imports: [
     BrowserModule,

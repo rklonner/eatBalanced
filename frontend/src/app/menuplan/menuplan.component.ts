@@ -20,6 +20,12 @@ export class MenuplanComponent implements OnInit {
   ngOnInit() {
   }
   
+  toogleViewUserSelectAll() {
+	for (let recipe of this.menuplanService.selectedRecipes) {
+	  recipe.toggleViewUserSelect();
+	}
+  }
+  
   // use DomSanitizer to secure background-image url
   getBackgroundImage(recipe: Recipe) {
 	//TODO: get baseurl from somewhere else

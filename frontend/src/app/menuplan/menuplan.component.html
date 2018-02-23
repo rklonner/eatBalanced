@@ -14,16 +14,21 @@
 		[ngStyle]="{'color': user.isEatingMeal ? 'blue' : 'grey'}"
 		(click)="user.switchEatMeal()"></fa>
 	  <fa name="trash-o" size="3x" style="color: black" (click)="menuplanService.delete(i)"></fa>-->
-	  
-	  <button *ngFor='let user of recipe.userMenuplan' 
-	    type="button"
-		[ngClass]="user.isEatingMeal ? 'btn btn-info' : 'btn btn-warning'"
-        (click)="user.switchEatMeal()">{{ user.name }}</button>
+	  <button type="button" class="btn btn-basic" (click)="recipe.toggleViewUserSelect()"><fa name="users"></fa></button>
+	  <button type="button" class="btn btn-basic" (click)="menuplanService.moveUp(i)"><fa name="angle-up"></fa></button>
+	  <button type="button" class="btn btn-basic" (click)="menuplanService.moveDown(i)"><fa name="angle-down"></fa></button>
 	  <button type="button" class="btn btn-danger" (click)="menuplanService.delete(i)"><fa name="minus" style="color: white"></fa></button>
+
+	  <br>
+	  <div *ngIf="recipe.viewUserSelect">
+	    <app-menuplan-users-select [userMenuplan]="recipe.userMenuplan"></app-menuplan-users-select>
+	  </div>
+
 	  <br>
 	  <br>
 	  </div>
   </div>
   <button type="button" class="btn btn-danger" (click)="menuplanService.clear()">Menüplan löschen</button>
+  <button type="button" class="btn btn-basic" (click)="toogleViewUserSelectAll()">Alle Personen bearbeiten</button>
 </div>
 

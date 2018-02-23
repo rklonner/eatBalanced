@@ -44,13 +44,20 @@ export class Recipe {
 export class RecipeMenuplan extends Recipe {
 
   userMenuplan: UserMenuplan[];
+  viewUserSelect: boolean;
 	
   constructor(recipe: Recipe, users: User[]) {
 	super(recipe);
 	
 	this.userMenuplan = []
+	this.viewUserSelect = false;
+	
 	for (let u of users) {
 	  this.userMenuplan.push(new UserMenuplan(u, recipe.calories_diet_plan));
 	}
+  }
+  
+  toggleViewUserSelect() {
+	this.viewUserSelect = !this.viewUserSelect;
   }
 }

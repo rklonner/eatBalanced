@@ -1,22 +1,27 @@
 <h3>Einkaufsliste</h3>
 
-<table *ngIf="shoppingList.items.length">
-  <!--class="table table-sm">-->
-  <thead>
-    <tr>
-      <th>Menge</th>
-	  <th>Einheit</th>
-      <th>Zutat</th>
-	  <th>Kategorie</th>
-	</tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let ingredient of shoppingList.items; let i = index">
-      <td align="right">{{ ingredient.quantity | round }}</td>
-	  <td>{{ ingredient.unit }}</td>
-      <td>{{ ingredient.name }}</td>
-	  <td align="center">{{ ingredient.category }}</td>
-	  <td><button type="button" class="btn btn-danger" (click)="shoppingList.deleteItem(i)"><fa name="minus" style="color: white"></fa></button></td>
-    </tr>
-  </tbody>
-</table>
+<div class="row">
+  <div class="col-lg-6 col-12">
+    <table *ngIf="shoppingList.items.length"
+      class="table table-responsive">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Menge</th>
+    	  <th>Einheit</th>
+          <th>Zutat</th>
+    	  <th>Kategorie</th>
+    	  <th></th>
+    	</tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ingredient of shoppingList.items; let i = index">
+          <td align="right">{{ ingredient.quantity | round }}</td>
+    	  <td>{{ ingredient.unit }}</td>
+          <td>{{ ingredient.name }}</td>
+    	  <td>{{ ingredient.category }}</td>
+    	  <td><button type="button" class="btn btn-danger" (click)="shoppingList.deleteItem(i)"><fa name="minus" style="color: white"></fa></button></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+</div>

@@ -1,6 +1,6 @@
 <h3>Rezepte</h3>
 <div class="row">
-  <div class="col-lg-4">
+  <div class="col-lg-4 col-12">
     <div class="input-group">
       <input type="text" class="form-control" placeholder="Rezeptsuche ...">
       <span class="input-group-btn">
@@ -9,16 +9,20 @@
     </div>
   </div>
 </div>
+
 <br>
 <br>
-<div class="recipes">
-  <div *ngFor="let recipe of recipes">
+
+<div class="row">
+  <div class="col-lg-4 col-12"
+       *ngFor="let recipe of recipes">
     <h4>{{recipe.name}}</h4>
 	<a routerLink="/detail/{{recipe.id}}">
 	  <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
 	</a>
 	<br>
 	<button type="button" class="btn btn-primary" (click)="onClickAddToMenuplan(recipe)"><fa name="plus" style="color: white"></fa> Menüplan</button>
-	<br><br>
+	<br>
+	<br>
   </div>
 </div>
