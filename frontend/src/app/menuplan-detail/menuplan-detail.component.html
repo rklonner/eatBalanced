@@ -1,8 +1,47 @@
-<div *ngIf="recipeMenuplan">
+<div class="row">
+
+<div 
+  class="col-lg-6 col-12"
+  *ngIf="recipeMenuplan">
   <h4>{{ recipeMenuplan.name }}</h4>
   <div class="recipeListImageContainer" [style]="getBackgroundImage(recipeMenuplan)"></div>
   
-  <table>
+  <br>
+  <u>Übersicht:</u>
+  <div class="table-responsive">
+  <table class="table">
+    <thead>
+	  <tr>
+	    <th></th>
+	    <th>Gesamt</th>
+	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
+	      <th>{{ userMenuplan.name }}</th>
+	    </ng-container>
+      </tr>
+    </thead>
+    <tbody>
+	  <tr>
+	    <td>Kalorien</td>
+	    <td>{{ recipeMenuplan.calories | multiply:recipeMenuplan.householdIngredientFactor | round }} cal</td>
+	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
+	      <td>{{ recipeMenuplan.calories | multiply:userMenuplan.ingredientFactor | round }} cal</td>
+	    </ng-container>
+	  </tr>
+	  <tr>
+	    <td>Anteil</td>
+	    <td>100 %</td>
+	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
+	      <td>{{ userMenuplan.householdPercentage | round }} %</td>
+	    </ng-container>
+	  </tr>
+    </tbody>	
+  </table>
+  </div>
+  <br>
+  
+  <u>Zutaten:</u>
+  <div class="table-responsive">
+  <table class="table">
     <thead>
 	  <tr>
 	    <th>Zutaten</th>
@@ -16,20 +55,14 @@
     <tbody>
 	  <tr *ngFor="let ingredient of recipeMenuplan['ingredients']">
 	    <td>{{ ingredient.name }}</td>
-	    <td>{{ ingredient.quantity | round }} {{ ingredient.unit }}</td>
+	    <td>{{ ingredient.quantity | multiply:recipeMenuplan.householdIngredientFactor | round }} {{ ingredient.unit }}</td>
 	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
 	      <td>{{ ingredient.quantity | multiply:userMenuplan.ingredientFactor | round }} {{ ingredient.unit }}</td>
 	    </ng-container>
 	  </tr>
-	  <tr>
-	    <td>Kalorien</td>
-	    <td>{{ recipeMenuplan.calories }} </td>
-	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
-	      <td>{{ recipeMenuplan.calories | multiply:userMenuplan.ingredientFactor | round }}</td>
-	    </ng-container>
-	  </tr>
 	</tbody>
   </table>
+  </div>
   <br>
   <div>
 	<u>Zubereitung:</u>
@@ -41,3 +74,5 @@
   </div>
   <button type="button" class="btn btn-primary" (click)="goBack()">Zurück</button>
 </div>
+
+</div> <!-- class row-->

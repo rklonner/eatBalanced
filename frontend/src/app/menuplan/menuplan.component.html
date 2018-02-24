@@ -4,7 +4,7 @@
   <div>
     
     <div *ngFor='let recipe of menuplanService.selectedRecipes; let i = index'>
-	  <h6>{{recipe.name}}</h6>
+	  <h6><b>{{recipe.name}}</b></h6>
 	  <!-- use + 1 to have nice id urls, gets substracted in .ts method -->
 	  <a routerLink="/menuplan-detail/{{i + 1}}">
 	    <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
@@ -14,10 +14,10 @@
 		[ngStyle]="{'color': user.isEatingMeal ? 'blue' : 'grey'}"
 		(click)="user.switchEatMeal()"></fa>
 	  <fa name="trash-o" size="3x" style="color: black" (click)="menuplanService.delete(i)"></fa>-->
-	  <button type="button" class="btn btn-basic" (click)="recipe.toggleViewUserSelect()"><fa name="users"></fa></button>
-	  <button type="button" class="btn btn-basic" (click)="menuplanService.moveRecipeUp(i)"><fa name="angle-up"></fa></button>
-	  <button type="button" class="btn btn-basic" (click)="menuplanService.moveDown(i)"><fa name="angle-down"></fa></button>
-	  <button type="button" class="btn btn-danger" (click)="menuplanService.delete(i)"><fa name="minus" style="color: white"></fa></button>
+	  <span><button type="button" class="btn btn-basic buttonWidth" syle="width: 100px" (click)="recipe.toggleViewUserSelect()"><fa name="users"></fa></button></span>
+	  <span><button type="button" class="btn btn-basic buttonWidth" (click)="menuplanService.moveRecipeUp(i)"><fa name="angle-up"></fa></button></span>
+	  <span><button type="button" class="btn btn-basic buttonWidth" (click)="menuplanService.moveDown(i)"><fa name="angle-down"></fa></button></span>
+	  <span><button type="button" class="btn btn-danger buttonWidth" (click)="menuplanService.delete(i)"><fa name="minus" style="color: white"></fa></button></span>
 
 	  <br>
 	  <div *ngIf="recipe.viewUserSelect">
@@ -28,7 +28,7 @@
 	  <br>
 	  </div>
   </div>
-  <button type="button" class="btn btn-danger" (click)="menuplanService.clear()">Menüplan löschen</button>
-  <button type="button" class="btn btn-basic" (click)="toogleViewUserSelectAll()">Alle Personen bearbeiten</button>
+  <button type="button" class="btn btn-danger btn-md" (click)="menuplanService.clear()">Menüplan löschen</button>
+  <button type="button" class="btn btn-basic btn-md" (click)="toogleViewUserSelectAll()">Alle Personen bearbeiten</button>
 </div>
 

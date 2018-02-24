@@ -20,6 +20,7 @@ export class UserMenuplan extends User {
 
   isEatingMeal: boolean;
   ingredientFactor: number;
+  householdPercentage: number; // will be set in class RecipeMenuplan
   
   constructor(user: User, calories_diet_plan: number) {
 	super(user);

@@ -45,19 +45,33 @@ export class RecipeMenuplan extends Recipe {
 
   userMenuplan: UserMenuplan[];
   viewUserSelect: boolean;
+  householdIngredientFactor: number;
 	
   constructor(recipe: Recipe, users: User[]) {
 	super(recipe);
 	
 	this.userMenuplan = []
 	this.viewUserSelect = false;
+	this.householdIngredientFactor = 0;
 	
 	for (let u of users) {
-	  this.userMenuplan.push(new UserMenuplan(u, recipe.calories_diet_plan));
+	  let uM = new UserMenuplan(u, recipe.calories_diet_plan);
+	  this.householdIngredientFactor += uM.ingredientFactor;
+	  this.userMenuplan.push(uM);
 	}
+	
+	// now we have all users and the householdIngredientFactor
+	// we can set user specific householdPercentage
+	this.setUserHouseholdPercentage();
   }
   
   toggleViewUserSelect() {
 	this.viewUserSelect = !this.viewUserSelect;
+  }
+  
+  private setUserHouseholdPercentage() {
+	for (let uM of this.userMenuplan) {
+	  uM.householdPercentage = (uM.ingredientFactor / this.householdIngredientFactor) * 100;
+	}
   }
 }
