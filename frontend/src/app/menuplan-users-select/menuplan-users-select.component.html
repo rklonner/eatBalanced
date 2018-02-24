@@ -1,7 +1,7 @@
 <ng-container *ngFor='let user of userMenuplan'>
   <button
     type="button"
-    [ngClass]="user.isEatingMeal ? 'btn btn-info' : 'btn btn-warning'"
+    [ngClass]="user.isEatingMeal ? 'btn btn-success' : 'btn btn-secondary'"
     (click)="user.switchEatMeal()">{{ user.name }}
   </button>
   <br>

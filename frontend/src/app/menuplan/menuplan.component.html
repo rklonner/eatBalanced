@@ -15,7 +15,7 @@
 		(click)="user.switchEatMeal()"></fa>
 	  <fa name="trash-o" size="3x" style="color: black" (click)="menuplanService.delete(i)"></fa>-->
 	  <button type="button" class="btn btn-basic" (click)="recipe.toggleViewUserSelect()"><fa name="users"></fa></button>
-	  <button type="button" class="btn btn-basic" (click)="menuplanService.moveUp(i)"><fa name="angle-up"></fa></button>
+	  <button type="button" class="btn btn-basic" (click)="menuplanService.moveRecipeUp(i)"><fa name="angle-up"></fa></button>
 	  <button type="button" class="btn btn-basic" (click)="menuplanService.moveDown(i)"><fa name="angle-down"></fa></button>
 	  <button type="button" class="btn btn-danger" (click)="menuplanService.delete(i)"><fa name="minus" style="color: white"></fa></button>
 
