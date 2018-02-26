@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { DomSanitizer  } from '@angular/platform-browser';
+import { ToastsManager } from 'ng2-toastr/ng2-toastr';// for toast msg
 
 import { Recipe } from '../recipe';
 import { RecipeService } from '../recipe.service';
@@ -17,7 +18,11 @@ export class RecipesComponent implements OnInit {
   
   constructor(private recipeService: RecipeService,
               private menuplanService: MenuplanService,
-              private sanitizer: DomSanitizer) { }
+              private sanitizer: DomSanitizer,
+			  public toastr: ToastsManager, vcr: ViewContainerRef // for toast msg
+			  ) {
+				  this.toastr.setRootViewContainerRef(vcr); // for toast msg
+			  }
   
   ngOnInit() {
 	this.getRecipes();
@@ -38,5 +43,12 @@ export class RecipesComponent implements OnInit {
   
   onClickAddToMenuplan(recipe: Recipe): void {
 	this.menuplanService.add(recipe);
+	let msg = 'Rezept wurde hinzugefügt';
+	this.showInfo(msg);
+  }
+  
+  // define toast messages
+  showInfo(msg: string) {
+    this.toastr.info(msg);
   }
 }

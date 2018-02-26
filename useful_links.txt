@@ -33,3 +33,12 @@ https://auth0.com/blog/angular-2-series-part-2-domain-models-and-dependency-inje
 
 # bootstrap - center div within an col-4 column (justify-content-start)
 https://v4-alpha.getbootstrap.com/layout/grid/#horizontal-alignment
+
+# integrating toastr module for toast notifications
+https://www.thetechieshouse.com/use-alert-toast-notifications-in-angular-4/
+
+# gernal info on toastr and how to customize it
+https://www.npmjs.com/package/ng2-toastr
+
+# notifications - making a notification service component
+http://jasonwatmore.com/post/2017/06/25/angular-2-4-alert-toaster-notifications
