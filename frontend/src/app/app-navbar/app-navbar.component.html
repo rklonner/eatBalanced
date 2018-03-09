@@ -17,6 +17,19 @@
 		<li class="nav-item"><a id="mainShoppingList" class="nav-link"
 		  routerLink="/shoppinglist" (click)="isNavbarCollapsed = !isNavbarCollapsed" href=#>Einkaufsliste
 		</a></li>
+		
+		<!-- only if user is loggend in -->
+		<ng-container *ngIf="authService.getUser()">
+		<div class="dropdown-divider" style="border-color:grey;"></div>
+		<li class="nav-item" *ngIf="authService.getUser()">
+          <a class="nav-link" (click)="isNavbarCollapsed = !isNavbarCollapsed" routerLink="/user-profile" href=#>
+		  User: <b>{{ authService.getUser() }}</b></a>
+		</li>
+		<li class="nav-item" *ngIf="authService.getUser()">
+          <a href class="nav-link" routerLink="/login" (click)="isNavbarCollapsed = !isNavbarCollapsed"
+		  (click)="authService.logout()" href=#>Logout</a>
+		</li>
+		</ng-container>
       </ul>
     </div>
   </div>

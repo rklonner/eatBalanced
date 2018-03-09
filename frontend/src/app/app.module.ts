@@ -21,10 +21,14 @@ import { UserService } from './user.service';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { MenuplanDetailComponent } from './menuplan-detail/menuplan-detail.component';
 import { MenuplanUsersSelectComponent } from './menuplan-users-select/menuplan-users-select.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { LoginComponent } from './login/login.component';
+import { AuthService } from './auth.service';
+import { AUTH_PROVIDERS } from './auth.service';
+import { LoggedInGuard } from './logged-in.guard';
 
 import { RoundPipe } from './pipes/round.pipe';
 import { MultiplyPipe } from './pipes/multiply.pipe';
-
 
 
 
@@ -40,7 +44,9 @@ import { MultiplyPipe } from './pipes/multiply.pipe';
 	MenuplanDetailComponent,
 	RoundPipe,
 	MultiplyPipe,
-	MenuplanUsersSelectComponent
+	MenuplanUsersSelectComponent,
+	LoginComponent,
+	UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +58,7 @@ import { MultiplyPipe } from './pipes/multiply.pipe';
 	AngularFontAwesomeModule,
 	ToastModule.forRoot()
   ],
-  providers: [RecipeService, MessageService, MenuplanService, UserService],
+  providers: [RecipeService, MessageService, MenuplanService, UserService, AuthService, AUTH_PROVIDERS, LoggedInGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

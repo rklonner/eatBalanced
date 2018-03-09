@@ -42,3 +42,7 @@ https://www.npmjs.com/package/ng2-toastr
 
 # notifications - making a notification service component
 http://jasonwatmore.com/post/2017/06/25/angular-2-4-alert-toaster-notifications
+
+# angular login redirect
+https://angular-2-training-book.rangle.io/handout/routing/route_guards.html
+http://jasonwatmore.com/post/2016/12/08/angular-2-redirect-to-previous-url-after-login-with-auth-guard
