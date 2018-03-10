@@ -11,7 +11,7 @@ import { MessageService } from './message.service';
 @Injectable()
 export class RecipeService {
 
-  private recipesUrl = 'http://testappeat-testappeat.a3c1.starter-us-west-1.openshiftapps.com/api/recipes';  // URL to web api
+  private recipesUrl = 'http://backend-eatbalanced.a3c1.starter-us-west-1.openshiftapps.com' + '/api/recipes';  // URL to web api
   
   constructor(
     private http: HttpClient,
