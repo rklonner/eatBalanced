@@ -1,0 +1,268 @@
+{ "recipes": [
+	{"id": 1,
+	"name": "Low-Carb Müsli",
+	"calories": 390,
+	"calories_diet_plan": 1400,
+	"category": "breakfast",
+	"ingredients": [
+		{ "name": "Chia-Samen", "unit": "g", "quantity": 15, "category": "other"},
+		{ "name": "Sojaflocken", "unit": "g", "quantity": 10, "category": "other"},
+		{ "name": "Nüsse", "unit": "g", "quantity": 15, "category": "other"},
+		{ "name": "Topfen", "unit": "g", "quantity": 125, "category": "Gekühlt"},
+		{ "name": "Obst", "unit": "g", "quantity": 150, "category": "Obst und Gemüse"}
+	],
+	"preparation": [
+	    "Chiasamen, Nüsse und Sojaflocken mit Wasser verrühren und über Nacht quellen lassen.",
+	    "In der Früh Topfen unterrühren und mit geschnittenem Obst anrichten."
+		],
+    "image_filename": "1.jpg"
+	},	
+	{"id": 2,
+	"name": "Caprese",
+	"calories": 495,
+	"category": "lunch",
+	"calories_diet_plan": 1400,
+	"ingredients": [
+		{ "name": "Mozzarella", "unit": "g", "quantity": 250, "category": "Gekühlt"},
+		{ "name": "Tomaten", "unit": "g", "quantity": 300,"category": "Obst und Gemüse"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 5, "category": "other"},
+		{ "name": "Basilikum", "unit": "g", "quantity": 3, "category": "other"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+	    "Mozzarella und Gemüse in Scheiben schneiden und schön anrichten."
+		],
+	"image_filename": "2.jpg"
+	},	
+	{"id": 3,
+	"name": "Tofustreifen-Salat mit Avocado",
+	"calories": 600,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Räuchertofu", "unit": "g", "quantity": 125, "category": "Gekühlt"},
+		{ "name": "Öl", "unit": "g", "quantity": 4, "category": "other"},
+		{ "name": "Sojasauce", "unit": "g", "quantity": 10, "category": "other"},
+		{ "name": "Gemüse", "unit": "g", "quantity": 250, "category": "Obst und Gemüse"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 10, "category": "other"},
+		{ "name": "Essig", "unit": "g", "quantity": 10, "category": "other"},
+		{ "name": "Senf", "unit": "g", "quantity": 4, "category": "other"},
+		{ "name": "Avocado", "unit": "g", "quantity": 150, "category": "Obst und Gemüse"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+	    "Tofustreifen trocken tupfen, in Öl anbraten, mit Sojasauce würzen.",
+        "Salat mit Dressing aus Essig, Öl und Senf marinieren.",
+		"Tofustreifen und Avocadostücke am Salat anrichten."
+		],
+	"image_filename": "3.jpg"
+	},	
+	{"id": 4,
+	"name": "Hirselaibchen mit Joghurtsauce",
+	"calories": 303,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Hirse", "unit": "g", "quantity": 50, "category": "other"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 133, "category": "other"},
+		{ "name": "Karotten", "unit": "g", "quantity": 27, "category": "Obst und Gemüse"},
+		{ "name": "Vollkornmehl", "unit": "g", "quantity": 17, "category": "other"},
+		{ "name": "Ei", "unit": "g", "quantity": 20, "category": "Gekühlt"},
+		{ "name": "Joghurt", "unit": "g", "quantity": 50, "category": "Gekühlt"},
+		{ "name": "Petersilie", "unit": "g", "quantity": 2, "category": "other"},
+		{ "name": "Schnittlauch", "unit": "g", "quantity": 150, "category": "other"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+	    "Hirse in Gemüsefond weich kochen und abkühlen lassen.",
+        "Anschließend mit würfelig geschnittenen Karotten und den übrigen Zutaten vermischen. Kleine Laibchen formen, auf ein mit Backpapier ausgelegtes Backblech legen und im Rohr bei 180° C ca. 25 Minuten backen.",
+        "Für die Schnittlauchsauce alle Zutaten miteinander vermischen, würzen und gut verrühren.",
+		"Tofustreifen trocken tupfen, in Öl anbraten, mit Sojasauce würzen. Salat mit Dressing aus Essig, Öl und Senf marinieren. Tofustreifen und Avocadostücke am Salat anrichten."
+		],
+	"image_filename": "4.jpg"
+	},
+	{"id": 5,
+	"name": "Süßkartoffel-Linsen-Eintopf",
+	"calories": 263,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Süßkartoffel", "unit": "g", "quantity": 75, "category": "Obst und Gemüse"},
+		{ "name": "Zwiebel", "unit": "g", "quantity": 15, "category": "Obst und Gemüse"},
+		{ "name": "Karotten", "unit": "g", "quantity": 40, "category": "Obst und Gemüse"},
+		{ "name": "Lauch", "unit": "g", "quantity": 29, "category": "Obst und Gemüse"},
+		{ "name": "Linsen", "unit": "g", "quantity": 50, "category": "other"},
+		{ "name": "Lorbeerblatt", "unit": "g", "quantity": 0.5, "category": "other"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 250, "category": "other"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 5, "category": "other"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+	    "Süßkartoffeln schälen und in Würfel schneiden. Zwiebel und Karotten schälen und klein hacken. Porree waschen und in Ringe schneiden.",
+        "Öl in einem Topf erhitzen. Süßkartoffeln, Zwiebeln, Karotten, Porree und Lorbeerblatt darin 5 Min. dünsten.",
+        "Linsen und Brühe hineingeben und zum Kochen bringen. Bei niedriger Temperatur ca. 10 Min köcheln lassen.",
+        "Mit Salz und Pfeffer abschmecken, Lorbeerblatt entfernen und servieren."
+		],
+	"image_filename": "5.jpg"
+	},
+	{"id": 6,
+	"name": "Cous-Cous Salat Vital",
+	"calories": 352,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Couscous roh", "unit": "g", "quantity": 63, "category": "other"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 63, "category": "other"},
+		{ "name": "Paprika", "unit": "g", "quantity": 39, "category": "Obst und Gemüse"},
+		{ "name": "Tomaten", "unit": "g", "quantity": 30, "category": "Obst und Gemüse"},
+		{ "name": "Gurke", "unit": "g", "quantity": 22, "category": "Obst und Gemüse"},
+		{ "name": "Zitrone", "unit": "g", "quantity": 37, "category": "Obst und Gemüse"},
+		{ "name": "Jungzwiebel", "unit": "g", "quantity": 15, "category": "Obst und Gemüse"},
+		{ "name": "Avocado", "unit": "g", "quantity": 56, "category": "Obst und Gemüse"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 1.6, "category": "other"}
+	],
+	"preparation": [
+	    "Heiße Gemüsesuppe über den Couscous gießen und ca. 10 Minuten abgedeckt quellen lassen.",
+        "Nun wir das Gemüse geputzt, gewaschen und geschnitten. Die Paprikaschote und die Tomaten werden in kleine Würfel geschnitten. Die Gurke wird entkernt und ebenfalls gewürfelt. Nachdem die Avocado und Frühlingszwiebel geschnitten wurden wird alles leicht mit Salz und Pfeffer gewürtzt.",
+		"Dann das Gemüse zum gequollenen Couscous geben. Die Zitrone aufschneiden und den Saft über den Salat geben. Zum Schluss das Öl mit dem Salat vermengen und genießen."
+		],
+	"image_filename": "6.jpg"
+	},
+    {"id": 7,
+	"name": "Gemüse-Risotto Vital",
+	"calories": 356,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Brokkoli", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
+		{ "name": "Zwiebel", "unit": "g", "quantity": 15, "category": "Obst und Gemüse"},
+		{ "name": "Lauch", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Karotten", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
+		{ "name": "Knollensellerie", "unit": "g", "quantity": 40, "category": "Obst und Gemüse"},
+		{ "name": "Erbsen", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 3, "category": "other"},
+		{ "name": "Risottoreis", "unit": "g", "quantity": 60, "category": "other"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 75, "category": "other"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Hartkäse 10%", "unit": "g", "quantity": 25, "category": "Gekühlt"}
+	],
+	"preparation": [
+	    "Gemüse putzen, Zwiebel hacken, Lauchzwiebel halbieren, Brokkoli in Röschen teilen, Karotten und Sellerie in kleine Stücke schneiden. Zwiebeln in Öl anschwitzen, Gemüse außer den Lauchzwiebeln beigeben und durchschwenken.",
+        "Ungeschälten Reis einrühren und mit Gemüsebrühe ablöschen, salzen und pfeffern. Gemüsereis 25 Min. auf kleiner Flamme dünsten, Lauchzwiebel beigeben und noch weitere 10 Minuten köcheln.",
+		"Zum Schluss den geriebenen Käse unter den Reis mischen und heiß servieren."
+		],
+	"image_filename": "7.jpg"
+	},	
+	{"id": 8,
+	"name": "Fisolen-Feta-Salat",
+	"calories": 202,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Fisolen", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
+		{ "name": "Schafskäse", "unit": "g", "quantity": 15, "category": "Gekühlt"},
+		{ "name": "Tomaten getrocknet", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Zwiebel", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
+		{ "name": "Weißweinessig", "unit": "g", "quantity": 40, "category": "other"},
+		{ "name": "Leinöl", "unit": "g", "quantity": 25, "category": "other"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+	    "Fisolen putzen und 5 Min in kochendem Salzwasser garen, abgießen, abschrecken und abtropfen lassen.",
+        "Getrocknete Tomaten evtl. halbieren. Schafskäse in grobe Würfel schneiden.",
+		"Zwiebel fein würfeln und gemeinsam mit Essig, Öl, Salz und Pfeffer zu einem Dressing verrühren.",
+		"Fisolen, Tomaten, Feta und Dressing in einer Schüssel mischen und mind. 30 Min. ziehen lassen."
+		],
+	"image_filename": "8.jpg"
+	},
+	{"id": 9,
+	"name": "Wraps mit Avocado",
+	"calories": 330,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Zwiebel", "unit": "g", "quantity": 9, "category": "Obst und Gemüse"},
+		{ "name": "Avocado", "unit": "g", "quantity": 57, "category": "Obst und Gemüse"},
+		{ "name": "Tomaten", "unit": "g", "quantity": 45, "category": "Obst und Gemüse"},
+		{ "name": "Zuckermais", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Joghurt", "unit": "g", "quantity": 17, "category": "Gekühlt"},
+		{ "name": "Frischkäse mit Kräutern", "unit": "g", "quantity": 20, "category": "Gekühlt"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Kräutermischung", "unit": "g", "quantity": 2, "category": "other"},
+		{ "name": "Eisbergsalat", "unit": "g", "quantity": 12.5, "category": "Obst und Gemüse"},
+		{ "name": "Tortilla aus Weizenmehl", "unit": "g", "quantity": 40, "category": "other"},
+		{ "name": "Feta", "unit": "g", "quantity": 25, "category": "Gekühlt"}
+	],
+	"preparation": [
+	    "Zwiebeln in Ringe schneiden. Avocado aufschneiden und den Stein entfernen. Fruchtfleisch mit einem Löffel aus der Schale lösen und klein würfeln.",
+        "Feta und Tomaten klein würfeln. Mais abtropfen lassen und mit Avocado, Tomaten und Zwiebeln mischen.",
+		"Joghurt und Frischkäse unterrühren und mit Salz, Pfeffer und Kräutern würzen Auf die Tortillas zuerst ein Salatblatt dann die Gemüse-Feta-Fülling verteilen. Tortillas fest aufrollen und auf Tellern anrichten."
+		],
+	"image_filename": "9.jpg"
+	},
+	{"id": 10,
+	"name": "Gemüsestrudel",
+	"calories": 408,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Karotten", "unit": "g", "quantity": 20, "category": "Obst und Gemüse"},
+		{ "name": "Brokkoli", "unit": "g", "quantity": 75, "category": "Obst und Gemüse"},
+		{ "name": "Karfiol", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
+		{ "name": "Erbsen", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 25, "category": "other"},
+		{ "name": "Hartkäse 10%", "unit": "g", "quantity": 25, "category": "Gekühlt"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Strudelteigblätter", "unit": "g", "quantity": 63, "category": "Gekühlt"},
+		{ "name": "Joghurt", "unit": "g", "quantity": 125, "category": "Gekühlt"},
+		{ "name": "Schnittlauch", "unit": "g", "quantity": 3, "category": "other"},
+		{ "name": "Knoblauch", "unit": "g", "quantity": 1, "category": "other"},
+		{ "name": "Ei", "unit": "g", "quantity": 10, "category": "Gekühlt"}
+	],
+	"preparation": [
+	    "Karotten schälen, in kleine Würfel schneiden und den Brokkoli und Karfiol in Röschen teilen. Gemüse gemeinsam mit den Erbsen in der Gemüsebrühe weich dünsten.",
+        "Mit dem geriebenen Käse mischen. Strudelteig auslegen und mit der Gemüsemischung füllen. Die Ränder dabei mit Ei bestreichen.",
+		"Im Backrohr bei ca. 180 Grad 25 Min. backen, bis der Strudel goldbraun ist.",
+		"In der Zwischenzeit aus Joghurt, gepresstem Knoblauch und Schnittlauch einen Dip mischen und zum heißen Strudel servieren."
+		],
+	"image_filename": "10.jpg"
+	},
+	{"id": 11,
+	"name": "Krautstrudel mit Joghurtdip",
+	"calories": 390,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Strudelteigblätter", "unit": "g", "quantity": 20, "category": "Obst und Gemüse"},
+		{ "name": "Weißkraut frisch", "unit": "g", "quantity": 75, "category": "Obst und Gemüse"},
+		{ "name": "Zwiebel", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
+		{ "name": "Rapsöl", "unit": "g", "quantity": 25, "category": "other"},
+		{ "name": "Knoblauch", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Kümmel", "unit": "g", "quantity": 25, "category": "Gewürze"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Kräuteressig", "unit": "g", "quantity": 2.5, "category": "other"},
+		{ "name": "Zucker", "unit": "g", "quantity": 63, "category": "other"},
+		{ "name": "Joghurt", "unit": "g", "quantity": 125, "category": "Gekühlt"},
+		{ "name": "Zitrone", "unit": "g", "quantity": 3, "category": "Obst und Gemüse"},
+		{ "name": "Kräuter", "unit": "g", "quantity": 1, "category": "other"}	
+	],
+	"preparation": [
+	    "Für die Fülle Zwiebel in heißem Öl anrösten; das feingeschnittene Kraut zugeben, mit Salz, Pfeffer und kümmel würzen.",
+        "Zucker dazugeben, etwas karamelisieren und mit Essig ablöschen. Kernig weich dünsten.",
+		"Die ausgekühlte Fülle auf dem ausgezogenen Teil verteilen, zusammenrollen und bei 170 Grad ca. 25-30 Minuten backen.",
+		"Für den Joghurt-Kräuterdip Joghurt, Zitronensaft und Kräuter vermischen und gut durchrühren."
+		],
+	"image_filename": "11.jpg"
+	}
+  ]
+}
