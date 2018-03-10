@@ -1,5 +1,11 @@
 <h3>Menüplan</h3>
 
+<div *ngIf="!menuplanService.selectedRecipes.length">
+Dein Menüplan ist derzeit noch leer.
+<br>
+<a routerLink="/recipes"><button type="button" class="btn btn-primary">Rezepte hinzufügen</button></a>
+</div>
+
 <div *ngIf="menuplanService.selectedRecipes.length">
   <div>
     
@@ -14,10 +20,12 @@
 		[ngStyle]="{'color': user.isEatingMeal ? 'blue' : 'grey'}"
 		(click)="user.switchEatMeal()"></fa>
 	  <fa name="trash-o" size="3x" style="color: black" (click)="menuplanService.delete(i)"></fa>-->
+	  <div style="display: inline-block;">
 	  <span><button type="button" class="btn btn-basic buttonWidth" syle="width: 100px" (click)="recipe.toggleViewUserSelect()"><fa name="users"></fa></button></span>
 	  <span><button type="button" class="btn btn-basic buttonWidth" (click)="menuplanService.moveRecipeUp(i)"><fa name="angle-up"></fa></button></span>
 	  <span><button type="button" class="btn btn-basic buttonWidth" (click)="menuplanService.moveDown(i)"><fa name="angle-down"></fa></button></span>
 	  <span><button type="button" class="btn btn-danger buttonWidth" (click)="menuplanService.delete(i)"><fa name="minus" style="color: white"></fa></button></span>
+	  </div>
 
 	  <br>
 	  <div *ngIf="recipe.viewUserSelect">

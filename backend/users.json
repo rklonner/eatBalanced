@@ -1,41 +1,31 @@
 { "users": {
-    "1": {
-        "id": 1,
+    "0": {
+        "id": 0,
 	    "name": "Robert",
-	    "username": "r.klonner@gmx.at",
-	    "password": "123",
 	    "calorie_requirement_diet": 2100,
+	    "household_user_ids": [1,2]
+	    },
+	"1": {
+        "id": 1,
+	    "name": "Sandra",
+	    "calorie_requirement_diet": 1400,
 	    "household_user_ids": [1,2]
 	    },
 	"2": {
         "id": 2,
-	    "name": "Sandra",
-	    "username": "s.bachhofner@gmx.at",
-	    "password": "123",
-	    "calorie_requirement_diet": 1400,
-	    "household_user_ids": [1,2]
+	    "name": "Josef",
+	    "calorie_requirement_diet": 2300,
+	    "household_user_ids": [3,4,5]
 	    },
 	"3": {
         "id": 3,
-	    "name": "Josef",
-	    "username": "jk@gmx.at",
-	    "password": "123",
-	    "calorie_requirement_diet": 2300,
+	    "name": "Gerti",
+	    "calorie_requirement_diet": 1500,
 	    "household_user_ids": [3,4,5]
 	    },
 	"4": {
         "id": 4,
-	    "name": "Gerti",
-	    "username": "gk@gmx.at",
-	    "password": "123",
-	    "calorie_requirement_diet": 1500,
-	    "household_user_ids": [3,4,5]
-	    },
-	"5": {
-        "id": 5,
 	    "name": "Christina",
-	    "username": "ck@gmx.at",
-	    "password": "123",
 	    "calorie_requirement_diet": 1300,
 	    "household_user_ids": [3,4,5]
 	    }

@@ -14,14 +14,16 @@
 <br>
 
 <div class="row">
-  <div class="col-lg-4 col-12"
+  <div class="col-lg-4 col-12" style="display: block;"
        *ngFor="let recipe of recipes">
+	<div class="test">
     <h6><b>{{recipe.name}}</b></h6>
 	<a routerLink="/detail/{{recipe.id}}">
 	  <div class="recipeListImageContainer" [style]="getBackgroundImage(recipe)"></div>
 	</a>
 	<br>
 	<button type="button" class="btn btn-primary btn-sm" (click)="onClickAddToMenuplan(recipe)"><fa name="plus" style="color: white"></fa> Menüplan</button>
+	</div>
 	<br>
 	<br>
   </div>

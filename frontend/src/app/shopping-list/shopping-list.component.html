@@ -1,13 +1,18 @@
 <h3>Einkaufsliste</h3>
 
+<div *ngIf="!menuplanService.selectedRecipes.length">
+Deine Einkaufsliste ist derzeit noch leer. Füge doch ein paar Rezepte zum Menüplan hinzu.
+<br>
+<a routerLink="/recipes"><button type="button" class="btn btn-primary">Rezepte hinzufügen</button></a>
+</div>
+
 <div class="row">
   <div class="col-lg-6 col-12">
     <table *ngIf="shoppingList.items.length"
-      class="table table-responsive">
+      class="table">
       <thead class="thead-inverse">
         <tr>
           <th>Menge</th>
-    	  <th>Einheit</th>
           <th>Zutat</th>
     	  <th>Kategorie</th>
     	  <th></th>
@@ -15,8 +20,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let ingredient of shoppingList.items; let i = index">
-          <td align="right">{{ ingredient.quantity | round }}</td>
-    	  <td>{{ ingredient.unit }}</td>
+          <td align="right">{{ ingredient.quantity | round }} {{ ingredient.unit }}</td>
           <td>{{ ingredient.name }}</td>
     	  <td>{{ ingredient.category }}</td>
     	  <td><button type="button" class="btn btn-danger" (click)="shoppingList.deleteItem(i)"><fa name="minus" style="color: white"></fa></button></td>

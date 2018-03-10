@@ -36,7 +36,7 @@ export class RecipesComponent implements OnInit {
   // use DomSanitizer to secure background-image url
   getBackgroundImage(recipe: Recipe) {
 	//TODO: get baseurl from somewhere else
-	const recipeImageUrl = "http://localhost:8000/" + recipe.image_filename;
+	const recipeImageUrl = "http://testappeat-testappeat.a3c1.starter-us-west-1.openshiftapps.com/" + recipe.image_filename;
     const style = `background-image: url(${recipeImageUrl})`;
 	return this.sanitizer.bypassSecurityTrustStyle(style);
   }
@@ -50,5 +50,11 @@ export class RecipesComponent implements OnInit {
   // define toast messages
   showInfo(msg: string) {
     this.toastr.info(msg);
+	/*this.toastr.info(msg, '', {dismiss: 'controlled'})
+    .then((toast: Toast) => {
+        setTimeout(() => {
+            this.toastr.dismissToast(toast);
+        }, 1500);
+    });*/
   }
 }

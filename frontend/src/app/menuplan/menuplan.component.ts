@@ -12,6 +12,8 @@ import { MenuplanService } from '../menuplan.service';
 })
 export class MenuplanComponent implements OnInit {
 
+  toogleViewUserStatus: boolean = false;
+
   constructor(
     public menuplanService: MenuplanService,
 	private sanitizer: DomSanitizer
@@ -21,8 +23,10 @@ export class MenuplanComponent implements OnInit {
   }
   
   toogleViewUserSelectAll() {
+	this.toogleViewUserStatus = !this.toogleViewUserStatus;
 	for (let recipe of this.menuplanService.selectedRecipes) {
-	  recipe.toggleViewUserSelect();
+	  //recipe.toggleViewUserSelect(this.toogleViewUserStatus);
+	  recipe.viewUserSelect = this.toogleViewUserStatus;
 	}
   }
   

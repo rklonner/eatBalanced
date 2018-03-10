@@ -63,3 +63,36 @@ app.get( '/api/users/:id', function( request, response ) {
       response.send( {users:[ allUsers[id] ] } );
     });
 });
+
+var authenticateUser = function(username, password, callback) {
+	getData( 'userAuthentication', function( allUsers ) {
+	  for (let id in allUsers) {
+		console.log(id);
+		console.log(allUsers[id]);
+		let userData = allUsers[id];
+		if (username == userData['username']) {
+	      if (password == userData['password']) {
+			return callback(true, id);
+		  } else {
+			return callback(false, id);
+		  }
+		}
+	  }
+	  // if user was not found also return false
+	  return callback(false, null);
+    });
+}
+
+app.get( '/api/authenticate/:username/:password', function( request, response ) {
+    var username = request.params.username;
+	var password = request.params.password;
+    console.log( 'GET user authentication', username  );
+	authenticateUser(username, password, function(isAuthenticated, userID) {
+	  console.log(isAuthenticated);
+	  if(isAuthenticated) {
+		response.send( {authenticated: isAuthenticated, userID: userID } );
+	  } else {
+		response.send( {authenticated: isAuthenticated, userID: userID } );
+	  }
+	});
+});
