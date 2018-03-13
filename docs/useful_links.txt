@@ -13,7 +13,7 @@ https://embed.plnkr.co/plunk/UvIxFe
 # angular daily deal append
 https://auth0.com/blog/angular-2-authentication/
 
-# angular todo append
+# angular todo append, good image of angular application structure components
 https://www.sitepoint.com/angular-2-tutorial/
 
 # set dynmic backgroundimage with anitizer.bypassSecurity
