@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewContainerRef } from '@angular/core';
 import { DomSanitizer  } from '@angular/platform-browser';
-import { ToastsManager } from 'ng2-toastr/ng2-toastr';// for toast msg
+import { Toast, ToastsManager } from 'ng2-toastr/ng2-toastr';// for toast msg
 
 import { Recipe } from '../recipe';
 import { RecipeService } from '../recipe.service';
@@ -49,12 +49,12 @@ export class RecipesComponent implements OnInit {
   
   // define toast messages
   showInfo(msg: string) {
-    this.toastr.info(msg);
-	/*this.toastr.info(msg, '', {dismiss: 'controlled'})
+    //this.toastr.info(msg);
+	this.toastr.info(msg, '', {dismiss: 'controlled'})
     .then((toast: Toast) => {
         setTimeout(() => {
             this.toastr.dismissToast(toast);
         }, 1500);
-    });*/
+    });
   }
 }

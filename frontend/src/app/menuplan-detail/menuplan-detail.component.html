@@ -22,9 +22,9 @@
     <tbody>
 	  <tr>
 	    <td>Kalorien</td>
-	    <td>{{ recipeMenuplan.calories | multiply:recipeMenuplan.householdIngredientFactor | round }} cal</td>
+	    <td>{{ recipeMenuplan.calories | multiply:recipeMenuplan.householdIngredientFactor | round }} kcal</td>
 	    <ng-container *ngFor="let userMenuplan of recipeMenuplan.userMenuplan">
-	      <td>{{ recipeMenuplan.calories | multiply:userMenuplan.ingredientFactor | round }} cal</td>
+	      <td>{{ recipeMenuplan.calories | multiply:userMenuplan.ingredientFactor | round }} kcal</td>
 	    </ng-container>
 	  </tr>
 	  <tr>

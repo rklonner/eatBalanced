@@ -2,7 +2,7 @@ import { Component, OnInit, Input, ViewContainerRef } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { DomSanitizer  } from '@angular/platform-browser';
-import { ToastsManager } from 'ng2-toastr/ng2-toastr';// for toast msg
+import { Toast, ToastsManager } from 'ng2-toastr/ng2-toastr';// for toast msg
 
 import { RecipeService }  from '../recipe.service';
 import { Recipe } from '../recipe';
@@ -58,6 +58,12 @@ export class RecipeDetailComponent implements OnInit {
   
   // define toast messages
   showInfo(msg: string) {
-    this.toastr.info(msg);
+    //this.toastr.info(msg);
+	this.toastr.info(msg, '', {dismiss: 'controlled'})
+    .then((toast: Toast) => {
+        setTimeout(() => {
+            this.toastr.dismissToast(toast);
+        }, 1500);
+    });
   }
 }
