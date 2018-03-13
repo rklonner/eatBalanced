@@ -5,9 +5,9 @@
 	"calories_diet_plan": 1400,
 	"category": "breakfast",
 	"ingredients": [
-		{ "name": "Chia-Samen", "unit": "g", "quantity": 15, "category": "Sontiges"},
-		{ "name": "Sojaflocken", "unit": "g", "quantity": 10, "category": "Sontiges"},
-		{ "name": "Nüsse", "unit": "g", "quantity": 15, "category": "Sontiges"},
+		{ "name": "Chia-Samen", "unit": "g", "quantity": 15, "category": "Sonstiges"},
+		{ "name": "Sojaflocken", "unit": "g", "quantity": 10, "category": "Sonstiges"},
+		{ "name": "Nüsse", "unit": "g", "quantity": 15, "category": "Sonstiges"},
 		{ "name": "Topfen", "unit": "g", "quantity": 125, "category": "Gekühlt"},
 		{ "name": "Obst", "unit": "g", "quantity": 150, "category": "Obst und Gemüse"}
 	],
@@ -25,8 +25,8 @@
 	"ingredients": [
 		{ "name": "Mozzarella", "unit": "g", "quantity": 250, "category": "Gekühlt"},
 		{ "name": "Tomaten", "unit": "g", "quantity": 300,"category": "Obst und Gemüse"},
-		{ "name": "Olivenöl", "unit": "g", "quantity": 5, "category": "Sontiges"},
-		{ "name": "Basilikum", "unit": "g", "quantity": 3, "category": "Sontiges"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 5, "category": "Sonstiges"},
+		{ "name": "Basilikum", "unit": "g", "quantity": 3, "category": "Sonstiges"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
 	],
@@ -42,12 +42,12 @@
 	"category": "dinner",
 	"ingredients": [
 		{ "name": "Räuchertofu", "unit": "g", "quantity": 125, "category": "Gekühlt"},
-		{ "name": "Öl", "unit": "g", "quantity": 4, "category": "Sontiges"},
-		{ "name": "Sojasauce", "unit": "g", "quantity": 10, "category": "Sontiges"},
+		{ "name": "Öl", "unit": "g", "quantity": 4, "category": "Sonstiges"},
+		{ "name": "Sojasauce", "unit": "g", "quantity": 10, "category": "Sonstiges"},
 		{ "name": "Gemüse", "unit": "g", "quantity": 250, "category": "Obst und Gemüse"},
-		{ "name": "Olivenöl", "unit": "g", "quantity": 10, "category": "Sontiges"},
-		{ "name": "Essig", "unit": "g", "quantity": 10, "category": "Sontiges"},
-		{ "name": "Senf", "unit": "g", "quantity": 4, "category": "Sontiges"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 10, "category": "Sonstiges"},
+		{ "name": "Essig", "unit": "g", "quantity": 10, "category": "Sonstiges"},
+		{ "name": "Senf", "unit": "g", "quantity": 4, "category": "Sonstiges"},
 		{ "name": "Avocado", "unit": "g", "quantity": 150, "category": "Obst und Gemüse"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
@@ -65,14 +65,14 @@
 	"calories_diet_plan": 1400,
 	"category": "dinner",
 	"ingredients": [
-		{ "name": "Hirse", "unit": "g", "quantity": 50, "category": "Sontiges"},
-		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 133, "category": "Sontiges"},
+		{ "name": "Hirse", "unit": "g", "quantity": 50, "category": "Sonstiges"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 133, "category": "Sonstiges"},
 		{ "name": "Karotten", "unit": "g", "quantity": 27, "category": "Obst und Gemüse"},
-		{ "name": "Vollkornmehl", "unit": "g", "quantity": 17, "category": "Sontiges"},
+		{ "name": "Vollkornmehl", "unit": "g", "quantity": 17, "category": "Sonstiges"},
 		{ "name": "Ei", "unit": "g", "quantity": 20, "category": "Gekühlt"},
 		{ "name": "Joghurt", "unit": "g", "quantity": 50, "category": "Gekühlt"},
-		{ "name": "Petersilie", "unit": "g", "quantity": 2, "category": "Sontiges"},
-		{ "name": "Schnittlauch", "unit": "g", "quantity": 150, "category": "Sontiges"},
+		{ "name": "Petersilie", "unit": "g", "quantity": 2, "category": "Sonstiges"},
+		{ "name": "Schnittlauch", "unit": "g", "quantity": 150, "category": "Sonstiges"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
 	],
@@ -94,10 +94,10 @@
 		{ "name": "Zwiebel", "unit": "g", "quantity": 15, "category": "Obst und Gemüse"},
 		{ "name": "Karotten", "unit": "g", "quantity": 40, "category": "Obst und Gemüse"},
 		{ "name": "Lauch", "unit": "g", "quantity": 29, "category": "Obst und Gemüse"},
-		{ "name": "Linsen", "unit": "g", "quantity": 50, "category": "Sontiges"},
-		{ "name": "Lorbeerblatt", "unit": "g", "quantity": 0.5, "category": "Sontiges"},
-		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 250, "category": "Sontiges"},
-		{ "name": "Olivenöl", "unit": "g", "quantity": 5, "category": "Sontiges"},
+		{ "name": "Linsen", "unit": "g", "quantity": 50, "category": "Sonstiges"},
+		{ "name": "Lorbeerblatt", "unit": "g", "quantity": 0.5, "category": "Sonstiges"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 250, "category": "Sonstiges"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 5, "category": "Sonstiges"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
 	],
@@ -115,8 +115,8 @@
 	"calories_diet_plan": 1400,
 	"category": "dinner",
 	"ingredients": [
-		{ "name": "Couscous roh", "unit": "g", "quantity": 63, "category": "Sontiges"},
-		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 63, "category": "Sontiges"},
+		{ "name": "Couscous roh", "unit": "g", "quantity": 63, "category": "Sonstiges"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 63, "category": "Sonstiges"},
 		{ "name": "Paprika", "unit": "g", "quantity": 39, "category": "Obst und Gemüse"},
 		{ "name": "Tomaten", "unit": "g", "quantity": 30, "category": "Obst und Gemüse"},
 		{ "name": "Gurke", "unit": "g", "quantity": 22, "category": "Obst und Gemüse"},
@@ -125,7 +125,7 @@
 		{ "name": "Avocado", "unit": "g", "quantity": 56, "category": "Obst und Gemüse"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
-		{ "name": "Olivenöl", "unit": "g", "quantity": 1.6, "category": "Sontiges"}
+		{ "name": "Olivenöl", "unit": "g", "quantity": 1.6, "category": "Sonstiges"}
 	],
 	"preparation": [
 	    "Heiße Gemüsesuppe über den Couscous gießen und ca. 10 Minuten abgedeckt quellen lassen.",
@@ -146,9 +146,9 @@
 		{ "name": "Karotten", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
 		{ "name": "Knollensellerie", "unit": "g", "quantity": 40, "category": "Obst und Gemüse"},
 		{ "name": "Erbsen", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
-		{ "name": "Olivenöl", "unit": "g", "quantity": 3, "category": "Sontiges"},
-		{ "name": "Risottoreis", "unit": "g", "quantity": 60, "category": "Sontiges"},
-		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 75, "category": "Sontiges"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 3, "category": "Sonstiges"},
+		{ "name": "Risottoreis", "unit": "g", "quantity": 60, "category": "Sonstiges"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 75, "category": "Sonstiges"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Hartkäse 10%", "unit": "g", "quantity": 25, "category": "Gekühlt"}
@@ -170,8 +170,8 @@
 		{ "name": "Schafskäse", "unit": "g", "quantity": 15, "category": "Gekühlt"},
 		{ "name": "Tomaten getrocknet", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
 		{ "name": "Zwiebel", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
-		{ "name": "Weißweinessig", "unit": "g", "quantity": 40, "category": "Sontiges"},
-		{ "name": "Leinöl", "unit": "g", "quantity": 25, "category": "Sontiges"},
+		{ "name": "Weißweinessig", "unit": "g", "quantity": 40, "category": "Sonstiges"},
+		{ "name": "Leinöl", "unit": "g", "quantity": 25, "category": "Sonstiges"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
 	],
@@ -197,9 +197,9 @@
 		{ "name": "Frischkäse mit Kräutern", "unit": "g", "quantity": 20, "category": "Gekühlt"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
-		{ "name": "Kräutermischung", "unit": "g", "quantity": 2, "category": "Sontiges"},
+		{ "name": "Kräutermischung", "unit": "g", "quantity": 2, "category": "Sonstiges"},
 		{ "name": "Eisbergsalat", "unit": "g", "quantity": 12.5, "category": "Obst und Gemüse"},
-		{ "name": "Tortilla aus Weizenmehl", "unit": "g", "quantity": 40, "category": "Sontiges"},
+		{ "name": "Tortilla aus Weizenmehl", "unit": "g", "quantity": 40, "category": "Sonstiges"},
 		{ "name": "Feta", "unit": "g", "quantity": 25, "category": "Gekühlt"}
 	],
 	"preparation": [
@@ -219,14 +219,14 @@
 		{ "name": "Brokkoli", "unit": "g", "quantity": 75, "category": "Obst und Gemüse"},
 		{ "name": "Karfiol", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
 		{ "name": "Erbsen", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
-		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 25, "category": "Sontiges"},
+		{ "name": "Gemüsesuppe", "unit": "g", "quantity": 25, "category": "Sonstiges"},
 		{ "name": "Hartkäse 10%", "unit": "g", "quantity": 25, "category": "Gekühlt"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Strudelteigblätter", "unit": "g", "quantity": 63, "category": "Gekühlt"},
 		{ "name": "Joghurt", "unit": "g", "quantity": 125, "category": "Gekühlt"},
-		{ "name": "Schnittlauch", "unit": "g", "quantity": 3, "category": "Sontiges"},
-		{ "name": "Knoblauch", "unit": "g", "quantity": 1, "category": "Sontiges"},
+		{ "name": "Schnittlauch", "unit": "g", "quantity": 3, "category": "Sonstiges"},
+		{ "name": "Knoblauch", "unit": "g", "quantity": 1, "category": "Sonstiges"},
 		{ "name": "Ei", "unit": "g", "quantity": 10, "category": "Gekühlt"}
 	],
 	"preparation": [
@@ -246,15 +246,15 @@
 		{ "name": "Strudelteigblätter", "unit": "g", "quantity": 20, "category": "Obst und Gemüse"},
 		{ "name": "Weißkraut frisch", "unit": "g", "quantity": 75, "category": "Obst und Gemüse"},
 		{ "name": "Zwiebel", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
-		{ "name": "Rapsöl", "unit": "g", "quantity": 25, "category": "Sontiges"},
+		{ "name": "Rapsöl", "unit": "g", "quantity": 25, "category": "Sonstiges"},
 		{ "name": "Knoblauch", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
 		{ "name": "Kümmel", "unit": "g", "quantity": 25, "category": "Gewürze"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
-		{ "name": "Kräuteressig", "unit": "g", "quantity": 2.5, "category": "Sontiges"},
-		{ "name": "Zucker", "unit": "g", "quantity": 63, "category": "Sontiges"},
+		{ "name": "Kräuteressig", "unit": "g", "quantity": 2.5, "category": "Sonstiges"},
+		{ "name": "Zucker", "unit": "g", "quantity": 63, "category": "Sonstiges"},
 		{ "name": "Joghurt", "unit": "g", "quantity": 125, "category": "Gekühlt"},
 		{ "name": "Zitrone", "unit": "g", "quantity": 3, "category": "Obst und Gemüse"},
-		{ "name": "Kräuter", "unit": "g", "quantity": 1, "category": "Sontiges"}	
+		{ "name": "Kräuter", "unit": "g", "quantity": 1, "category": "Sonstiges"}	
 	],
 	"preparation": [
 	    "Für die Fülle Zwiebel in heißem Öl anrösten; das feingeschnittene Kraut zugeben, mit Salz, Pfeffer und kümmel würzen.",
