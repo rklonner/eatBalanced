@@ -2,9 +2,9 @@
 <div class="row">
   <div class="col-lg-4 col-12">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Rezeptsuche ...">
+      <input type="text" class="form-control" placeholder="Rezeptsuche ..." [(ngModel)]="searchString">
       <span class="input-group-btn">
-        <button class="btn btn-secondary" type="button">Go!</button>
+        <button class="btn btn-secondary" type="button" (click)="searchRecipes()">Go!</button>
       </span>
     </div>
   </div>

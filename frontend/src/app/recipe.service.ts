@@ -12,6 +12,7 @@ import { MessageService } from './message.service';
 export class RecipeService {
 
   private recipesUrl = 'http://backend-eatbalanced.a3c1.starter-us-west-1.openshiftapps.com' + '/api/recipes';  // URL to web api
+  private recipesSearchUrl = 'http://backend-eatbalanced.a3c1.starter-us-west-1.openshiftapps.com' + '/api/recipesSearch'
   
   constructor(
     private http: HttpClient,
@@ -52,11 +53,9 @@ export class RecipeService {
 
   /* GET recipes whose name contains search term */
   searchRecipes(term: string): Observable<Recipe[]> {
-    if (!term.trim()) {
-      // if not search term, return empty hero array.
-      return of([]);
-    }
-    return this.http.get<Recipe[]>(`api/recipes/?name=${term}`).pipe(
+	const url = `${this.recipesSearchUrl}/${term}`;
+	//console.log("call search url", url);
+    return this.http.get<Recipe[]>(url).pipe(
       tap(_ => this.log(`found recipes matching "${term}"`)),
       catchError(this.handleError<Recipe[]>('searchRecipes', []))
     );

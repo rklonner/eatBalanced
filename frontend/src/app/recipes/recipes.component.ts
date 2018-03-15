@@ -15,6 +15,7 @@ import { MenuplanService } from '../menuplan.service';
 export class RecipesComponent implements OnInit {
   
   recipes: Recipe[];
+  searchString: string = '';
   
   constructor(private recipeService: RecipeService,
               private menuplanService: MenuplanService,
@@ -31,6 +32,12 @@ export class RecipesComponent implements OnInit {
   getRecipes(): void {
     this.recipeService.getRecipes()
         .subscribe(recipes => this.recipes = recipes);
+  }
+  
+  searchRecipes(): void {
+    this.recipeService.searchRecipes(this.searchString)
+        .subscribe(recipes => this.recipes = recipes);
+	this.searchString = '';
   }
   
   // use DomSanitizer to secure background-image url
