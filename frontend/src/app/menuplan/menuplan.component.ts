@@ -25,7 +25,6 @@ export class MenuplanComponent implements OnInit {
   toogleViewUserSelectAll() {
 	this.toogleViewUserStatus = !this.toogleViewUserStatus;
 	for (let recipe of this.menuplanService.selectedRecipes) {
-	  //recipe.toggleViewUserSelect(this.toogleViewUserStatus);
 	  recipe.viewUserSelect = this.toogleViewUserStatus;
 	}
   }

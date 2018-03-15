@@ -50,6 +50,32 @@ app.get( '/api/recipes/:id', function( request, response ) {
     });
 });
 
+app.get('/api/recipesSearch/:searchString?', function( request, response ) {
+	var searchString = request.params.searchString;
+    console.log( 'Search ' + searchString );
+	
+	// send all if searchString is undefined
+	if (typeof searchString == 'undefined') {
+		response.redirect('/api/recipes');
+	  //getData( 'recipes', function( allRecipes ) {
+       // response.send( allRecipes );
+      //})
+	} else {
+	// otherwise search
+      getData( 'recipes', function( allRecipes ) {
+	    var recipesFound = []
+	    console.log(searchString);
+	    for (var i=0;i<allRecipes.length;i++) {
+	  	  if (allRecipes[i]['name'].indexOf(searchString) != -1) {
+	  	    console.log(allRecipes[i]['name']);
+	  		recipesFound.push(allRecipes[i]);
+	  	  }
+	    }
+        response.send( { recipesFound } );
+      });
+	}
+});
+
 app.get( '/api/users', function( request, response ) {
   console.log( 'GET all users' );
     getData( 'users', function( allUsers ) {
