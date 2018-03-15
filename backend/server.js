@@ -71,7 +71,7 @@ app.get('/api/recipesSearch/:searchString?', function( request, response ) {
 	  		recipesFound.push(allRecipes[i]);
 	  	  }
 	    }
-        response.send( { recipesFound } );
+        response.send( recipesFound );
       });
 	}
 });
