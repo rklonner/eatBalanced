@@ -72,7 +72,7 @@
 		{ "name": "Ei", "unit": "g", "quantity": 20, "category": "Gekühlt"},
 		{ "name": "Joghurt", "unit": "g", "quantity": 50, "category": "Gekühlt"},
 		{ "name": "Petersilie", "unit": "g", "quantity": 2, "category": "Sonstiges"},
-		{ "name": "Schnittlauch", "unit": "g", "quantity": 150, "category": "Sonstiges"},
+		{ "name": "Schnittlauch", "unit": "g", "quantity": 1, "category": "Sonstiges"},
 		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
 		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
 	],
@@ -263,6 +263,132 @@
 		"Für den Joghurt-Kräuterdip Joghurt, Zitronensaft und Kräuter vermischen und gut durchrühren."
 		],
 	"image_filename": "11.jpg"
+	},
+	{"id": 12,
+	"name": "Gemüsepasta mit Brunch",
+	"calories": 377,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Vollkornnudeln", "unit": "g", "quantity": 75, "category": "Sonstiges"},
+		{ "name": "Cocktailtomaten", "unit": "g", "quantity": 100, "category": "Obst und Gemüse"},
+		{ "name": "Gurke", "unit": "g", "quantity": 100, "category": "Obst und Gemüse"},
+		{ "name": "Zwiebel", "unit": "g", "quantity": 18, "category": "Obst und Gemüse"},
+		{ "name": "Brunch Kren", "unit": "g", "quantity": 50, "category": "Gekühlt"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 2, "category": "Sonstiges"},
+		{ "name": "Tomatenmark", "unit": "g", "quantity": 8, "category": "Sonstiges"},
+		{ "name": "Oregano", "unit": "g", "quantity": 1, "category": "Gewürze"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Die Tomaten kreuzweise einritzen, mit kochendem Wasser übergießen und anschließend häuten. Die Gurke schälen, halbieren und entkernen, in Halb- oder Viertelringe schneiden. Zwiebel abziehen und fein würfeln.",
+		"Die Nudeln bissfest garen. In der Zwischenzeit Olivenöl in einer Pfanne erhitzen. Die Zwiebel darin glasig dünsten. DIe Tomaten und Gurken zufügen und kurz mit andünsten. Brunch zufügen und Sauce leicht köcheln lassen. Tomatenmark zufügen und mit Oregano, Salz und Peffer würzen.",
+		"Nudeln abgießen und mit der Sauce vermischt servieren."
+	],
+	"image_filename": "12.jpg"
+	},
+	{"id": 13,
+	"name": "Chili sin carne",
+	"calories": 314,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Olivenöl", "unit": "g", "quantity": 7, "category": "Sonstiges"},
+		{ "name": "Zwiebel", "unit": "g", "quantity": 23, "category": "Obst und Gemüse"},
+		{ "name": "Paprika", "unit": "g", "quantity": 52, "category": "Obst und Gemüse"},
+		{ "name": "Knoblauch", "unit": "g", "quantity": 1, "category": "Obst und Gemüse"},
+		{ "name": "Tomaten", "unit": "g", "quantity": 134, "category": "Obst und Gemüse"},
+		{ "name": "Kidney-Bohnen", "unit": "g", "quantity": 142, "category": "Sonstiges"},
+		{ "name": "Linsen", "unit": "g", "quantity": 33, "category": "Sonstiges"},
+		{ "name": "Paprika Gewürz", "unit": "g", "quantity": 1, "category": "Gewürze"},
+		{ "name": "Chili", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Koriander", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Zucker", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Das Öl in einer Pfanne erhitzen, die gewürfelte Zwiebel und Paprika 10 Minuten darin andünsten, dann Knoblauch und Tomaten zugeben.",
+		"Kidneybohnen und gekochte Linsen abtropfen lassen und mit Paprika- und Chilipulver zu der Tomatenmischung geben.",
+		"Etwa 20 Minuten köcheln lassen, dann mit Salz, Pfeffer und Zucker würzen, mit Koriander garnieren und servieren."
+	],
+	"image_filename": "13.jpg"
+	},
+	{"id": 14,
+	"name": "Indischer Kartoffelsalat",
+	"calories": 246,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Kartoffeln", "unit": "g", "quantity": 150, "category": "Obst und Gemüse"},
+		{ "name": "Brokkoli", "unit": "g", "quantity": 50, "category": "Obst und Gemüse"},
+		{ "name": "Mango", "unit": "g", "quantity": 63, "category": "Obst und Gemüse"},
+		{ "name": "Frühlingszwiebel", "unit": "g", "quantity": 60, "category": "Obst und Gemüse"},
+		{ "name": "Joghurt", "unit": "g", "quantity": 75, "category": "Gekühlt"},
+		{ "name": "Essig", "unit": "g", "quantity": 21, "category": "Sonstiges"},
+		{ "name": "Leinöl", "unit": "g", "quantity": 4, "category": "Sonstiges"},
+		{ "name": "Kreuzkümmel", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Koriander gemahlen", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Erdäpfel weich, schälen und in etwa 1 cm dicke Würfel schneiden. Brokkoli in Röschen teilen, in Salzwasser ca. 5 Min bissfest garen und kalt abschrecken.",
+		"Mango würfelig und Frühlingszwiebel in Ringe schneiden. Alles in einer Schüssel mischen.",
+		"Für die Marinade die Gewürze mit Joghurt, Essig und Öl in einer Schüssel verrühren. Mit Salz und Pfeffer würzen und über den Salat gießen. Salat für 15 Min. zugedeckt in den Kühlschrank stellen und kühl servieren."
+	],
+	"image_filename": "14.jpg"
+	},
+	{"id": 15,
+	"name": "Power Salat",
+	"calories": 179,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Paprika", "unit": "g", "quantity": 78, "category": "Obst und Gemüse"},
+		{ "name": "Champignon", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Karotten", "unit": "g", "quantity": 40, "category": "Obst und Gemüse"},
+		{ "name": "Vogerlsalat", "unit": "g", "quantity": 25, "category": "Obst und Gemüse"},
+		{ "name": "Weizen Keimlinge", "unit": "g", "quantity": 25, "category": "Sonstiges"},
+		{ "name": "Kräuteressig", "unit": "g", "quantity": 8, "category": "Sonstiges"},
+		{ "name": "Leinöl", "unit": "g", "quantity": 5, "category": "Sonstiges"},
+		{ "name": "Kräutermischung", "unit": "g", "quantity": 4, "category": "Sonstiges"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Gemüse waschen. Champignons blättrig schneiden, Karotten und Paprika würfelig schneiden, Feldsalat zerkleinern. Alles mit den Keimlingen vermischen.",
+		"Aus Essig, Öl Gewürzen, Kräutern und Salz eine Marinade zubereiten und den Salat marinieren."
+	],
+	"image_filename": "15.jpg"
+	},
+	{"id": 16,
+	"name": "One-Pot-Gemüsereis",
+	"calories": 343,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Basmatireis", "unit": "g", "quantity": 63, "category": "Obst und Gemüse"},
+		{ "name": "Zucchini", "unit": "g", "quantity": 210, "category": "Obst und Gemüse"},
+		{ "name": "Paprika", "unit": "g", "quantity": 155, "category": "Obst und Gemüse"},
+		{ "name": "Champignons", "unit": "g", "quantity": 30, "category": "Obst und Gemüse"},
+		{ "name": "Karotten", "unit": "g", "quantity": 62, "category": "Obst und Gemüse"},
+		{ "name": "Ingwer", "unit": "g", "quantity": 3, "category": "Obst und Gemüse"},
+		{ "name": "Sojasauce", "unit": "g", "quantity": 22, "category": "Sonstiges"},
+		{ "name": "Gemüsebrühe", "unit": "g", "quantity": 125, "category": "Sonstiges"},
+		{ "name": "Räuchertofu", "unit": "g", "quantity": 25, "category": "Gekühlt"},
+		{ "name": "Zitronensaft", "unit": "g", "quantity": 3, "category": "Obst und Gemüse"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Pilze, Gemüse und geschälten Ingwer klein schneiden und mit Reis und Sojasauce in einen Topf geben. Gemüsebrühe dazu gießen, aufkochen und mit Deckel 10 Min. köcheln lassen.",
+		"Inzwischen den Räuchertofu in Würfel schneiden, zum Reis mischen und nochmals 15 Min. köcheln lassen.",
+		"Der Reis und das Gemüse sollten gar und die Flüssigkeit zum Großteil verkocht sein.",
+		"Den Reis mit dem Zitronensaft, Sojasauce, Salz und Pfeffer abschmecken."
+	],
+	"image_filename": "16.jpg"
 	}
   ]
 }
