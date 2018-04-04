@@ -389,6 +389,100 @@
 		"Den Reis mit dem Zitronensaft, Sojasauce, Salz und Pfeffer abschmecken."
 	],
 	"image_filename": "16.jpg"
+	},
+	{"id": 17,
+	"name": "Liptauer mit Gemüsesticks",
+	"calories": 340,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Eisweißbrot", "unit": "g", "quantity": 100, "category": "Sonstiges"},
+		{ "name": "Paprika", "unit": "g", "quantity": 85, "category": "Obst und Gemüse"},
+		{ "name": "Gurke", "unit": "g", "quantity": 85, "category": "Obst und Gemüse"},
+		{ "name": "Kohlrabi", "unit": "g", "quantity": 85, "category": "Obst und Gemüse"},
+		{ "name": "Topfen", "unit": "g", "quantity": 125, "category": "Gekühlt"},
+		{ "name": "Tomatenmark", "unit": "g", "quantity": 5, "category": "Sonstiges"},
+		{ "name": "Senf", "unit": "g", "quantity": 5, "category": "Sonstiges"},
+		{ "name": "Essiggurkerl", "unit": "g", "quantity": 25, "category": "Sonstiges"},
+		{ "name": "Paprikapulver", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Gemüse zu Gemüsesticks verarbeiten, Essiggurkerl und Zwiebel hacken.",
+		"Topfen mit den restlichen Zutaten für den Liptauer Aufstrich verrühren."
+	],
+	"image_filename": "17.jpg"
+	},
+	{"id": 18,
+	"name": "Kichererbsen-Spinat-Curry",
+	"calories": 324,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Zwiebel", "unit": "g", "quantity": 83, "category": "Obst und Gemüse"},
+		{ "name": "Knoblauch", "unit": "g", "quantity": 3, "category": "Obst und Gemüse"},
+		{ "name": "Olivenöl", "unit": "g", "quantity": 8, "category": "Sonstiges"},
+		{ "name": "Kichererbsen", "unit": "g", "quantity": 300, "category": "Sonstiges"},
+		{ "name": "Blattspinat", "unit": "g", "quantity": 250, "category": "Tiefgekühlt"},
+		{ "name": "Gemüsebrühe", "unit": "g", "quantity": 100, "category": "Sonstiges"},
+		{ "name": "Kokosmilch", "unit": "g", "quantity": 100, "category": "Sonstiges"},
+		{ "name": "Currypulver", "unit": "g", "quantity": 4, "category": "Gewürze"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Zwiebel und Knoblauch klein hacken und im heißen Öl anbraten. Die abgetropften Kichererbsen und das Currypulver hinzugeben und kurz mitbraten.",
+		"Mit der Gemüsebrühe ablöschen und 5 Min. köcheln lassen.",
+		"Die Kokosmilch und den Spinat hinzugeben. Alles gut vermengen und weitere 10 Min. bei schwacher Hitze köcheln lassen. Dabei ab und zu umrühren. Das Curry mit Salz und Pfeffer abschmecken."
+	],
+	"image_filename": "18.jpg"
+	},
+	{"id": 19,
+	"name": "Karfiolauflauf",
+	"calories": 358,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Karfiol", "unit": "g", "quantity": 300, "category": "Obst und Gemüse"},
+		{ "name": "Romanesco", "unit": "g", "quantity": 300, "category": "Obst und Gemüse"},
+		{ "name": "Brokkoli", "unit": "g", "quantity": 300, "category": "Obst und Gemüse"},
+		{ "name": "Pizzakäse", "unit": "g", "quantity": 50, "category": "Gekühlt"},
+		{ "name": "Rama Cremefine", "unit": "g", "quantity": 150, "category": "Gekühlt"},
+		{ "name": "Ei", "unit": "g", "quantity": 60, "category": "Gekühlt"},
+		{ "name": "Muskatnuss", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Das Gemüse in Röschen teilen und 5 Min. in Salzwasser garen.",
+		"Rama Cremefine in einer Schüssel mit Muskatnuss, Salz und Pfeffer würzen. Das Ei unter die Masse quirlen.",
+		"Gemüse gut abtropfen lassen, in eine Auflaufform geben und Cremefine darüber gießen.",
+		"Mit Käse bestreuen und für 10 Min. im vorgeheizten Backrohr bei 200 °C auf mittlerer Schiene überbacken, bis der Käse goldbraun ist."
+	],
+	"image_filename": "19.jpg"
+	},
+	{"id": 20,
+	"name": "Nudelsalat",
+	"calories": 213,
+	"calories_diet_plan": 1400,
+	"category": "dinner",
+	"ingredients": [
+		{ "name": "Vollkornnudeln", "unit": "g", "quantity": 80, "category": "Obst und Gemüse"},
+		{ "name": "Erbsen", "unit": "g", "quantity": 150, "category": "Tiefgekühlt"},
+		{ "name": "Tomaten", "unit": "g", "quantity": 200, "category": "Obst und Gemüse"},
+		{ "name": "Paprika", "unit": "g", "quantity": 155, "category": "Obst und Gemüse"},
+		{ "name": "Essig", "unit": "g", "quantity": 14, "category": "Sonstiges"},
+		{ "name": "Joghurt", "unit": "g", "quantity": 60, "category": "Gekühlt"},
+		{ "name": "Basilikum", "unit": "g", "quantity": 3, "category": "Tiefgekühlt"},
+		{ "name": "Salz", "unit": "g", "quantity": 0, "category": "Gewürze"},
+		{ "name": "Pfeffer", "unit": "g", "quantity": 0, "category": "Gewürze"}
+	],
+	"preparation": [
+		"Paprika und Tomaten würfelig schneiden. Basilikum fein hacken.",
+		"Alle Zutaten miteinander vermischen und mind. 30 Min. durchziehen lassen."
+	],
+	"image_filename": "20.jpg"
 	}
   ]
 }
